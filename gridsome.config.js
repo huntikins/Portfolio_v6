@@ -5,6 +5,24 @@
 // To restart press CTRL + C in terminal and run `gridsome develop`
 
 module.exports = {
-  siteName: 'Hunter Trammell',
-  plugins: []
+  siteName: 'Gridsome Minimal Blog Starter',
+  siteUrl: 'https://gridsome-starter-minimal-blog.netlify.com/',
+  siteDescription: 'A minimalist blog built with Gridsome',
+  plugins: [
+    {
+      use: '@gridsome/source-filesystem',
+      options: {
+        path: 'content/posts/**/*.md',
+        typeName: 'Post',
+        remark: {
+          plugins: [
+            ['@gridsome/remark-prismjs', {transformInlineCode: true}]
+          ]
+        }
+      }
+    }
+  ],
+  templates: {
+      Post: '/blog/:title'
+    }
 }
