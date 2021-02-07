@@ -1,8 +1,14 @@
 <template>
-  <div class="post-item">
-    <span class="date">{{date}}</span>
-    <g-link :to="post.path" class="read">{{post.title}}</g-link>
-    <span class="time-to-read"><i>{{post.timeToRead}} min read</i></span>
+   <div class="col">
+    <div class="card h-100 shadow border-0 bg-light">
+      <img :src="post.image" class="card-img-top" :alt="post.description">
+      <div class="card-body">
+        <h3 class="card-title font-fredoka"><g-link :to="post.path" class="text-decoration-none text-dark">{{post.title}}</g-link></h3>
+        <small class="text-muted"><span>{{date}}</span>&nbsp;&mdash;&nbsp;<span>{{post.timeToRead}} min read</span></small>
+        <p class="card-text">{{post.description}}</p>
+        <g-link :to="post.path" class="btn btn-secondary font-fredoka">{{post.readmore}}</g-link>
+      </div>
+    </div>
   </div>
 </template>
 
@@ -18,14 +24,5 @@ export default {
 </script>
 
 <style>
-.date {
-  margin-right:10px;
-  min-width: 60px;
-  display:inline-block;
-}
-.time-to-read {
-  margin-left:10px;
-  color:gray;
-  font-size:.8em;
-}
+
 </style>

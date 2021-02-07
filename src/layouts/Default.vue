@@ -1,11 +1,11 @@
 <template>
   <div>
     <Header />
-    <main>
+    <main class="pb-4">
     <slot/>
     </main>
-    <footer>
-      <small class="text-center d-block text-muted pb-4">&copy; {{ new Date().getFullYear() }} Hunter Trammell</small>
+    <footer class="mt-4">
+      <small class="text-center d-block text-light py-1 bg-dark">&copy; {{ new Date().getFullYear() }} Hunter Trammell | Built with <span>&hearts;</span> using <strong><a href="https://twitter.com/gridsome" class="text-white text-decoration-none font-fredoka" target="_blank" rel="noopener">@gridsome</a></strong> & <strong><a href="https://twitter.com/netlify" class="text-white text-decoration-none font-fredoka" target="_blank" rel="noopener">@netlify</a></strong></small>
     </footer>
 </div>
 </template>
@@ -22,11 +22,10 @@ export default {
 
 <style lang="scss">
 @import url('https://fonts.googleapis.com/css2?family=Fredoka+One&family=Raleway&display=swap');
-body {
+body, html {
   font-family: 'Raleway', sans-serif;
   margin:0;
   padding:0;
-  line-height: 1.5;
 }
 h1 {font-weight:400;font-family: 'Fredoka One', cursive;}
 .font-fredoka {font-weight:400;font-family: 'Fredoka One', cursive;}
