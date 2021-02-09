@@ -53,10 +53,13 @@ query Post ($path: String!) {
  p {
    a {
      font-weight: 900;
-     color: #303030;
+     color: black;
      text-decoration: none;
+     transition: .25s all ease-in-out;
+     border-bottom: 2px solid transparent;
      &:hover {
        color: gray;
+       text-decoration: none;
        border-bottom: 2px solid gray;
      }
    }
