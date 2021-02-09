@@ -21,12 +21,12 @@ export default {
 </script>
 
 <style lang="scss">
-@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&family=Raleway&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Patua+One&family=Raleway&display=swap');
 body, html {
   font-family: 'Raleway', sans-serif;
   margin:0;
   padding:0;
 }
-h1 {font-weight:400;font-family: 'Fredoka One', cursive;}
-.font-fredoka {font-weight:400;font-family: 'Fredoka One', cursive;}
+h1, h2, h3, h4, h5, h6 {font-weight:400;font-family: 'Patua One', cursive;}
+.font-fredoka {font-weight:400;font-family: 'Patua One', cursive;}
 </style>

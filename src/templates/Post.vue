@@ -3,7 +3,7 @@
     <div class="container py-4">
       <h1 class="text-center pb-0 mb-0">{{$page.post.title}}</h1>
       <small class="text-muted text-center d-block"><span>{{$page.post.date}}</span>&nbsp;&mdash;&nbsp;<span>{{$page.post.timeToRead}} min read</span></small>
-      <article v-html="$page.post.content" />
+      <article v-html="$page.post.content" class="pt-4"/>
     </div>
   </Layout>
 </template>
@@ -34,6 +34,31 @@ query Post ($path: String!) {
 }
 </page-query>
 
-<style>
- 
+<style lang="scss">
+  h1 {
+    text-transform: capitalize;
+  }
+ h2 {
+   padding-top: 1rem;
+   text-transform: capitalize;
+ }
+ blockquote {
+   padding-left: 1rem;
+   font-style: italic;
+   border-left: 4px solid darkslategray;
+   line-height: 1.20;
+   font-size: 14px;
+   color: darkslategray;
+ }
+ p {
+   a {
+     font-weight: 900;
+     color: #303030;
+     text-decoration: none;
+     &:hover {
+       color: gray;
+       border-bottom: 2px solid gray;
+     }
+   }
+ }
 </style>
