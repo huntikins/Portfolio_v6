@@ -11,12 +11,16 @@
 export default {
  methods: {
    isHomepage: () => {
-      var current = window.location.pathname;
-      if (current == '/') {
-        return false
-      } else {
-        return true
-      }
+     if(window){
+       var current = window.location.pathname;
+        if (current == '/') {
+          return false
+        } else {
+          return true
+        }
+     } else {
+       return true;
+     }
    }
  }
 }
@@ -28,6 +32,9 @@ export default {
   span {
     font-size: 32px;
     @media(max-width: 350px){
+        font-size: 24px;
+      }
+      @media(max-width: 350px){
         font-size: 24px;
       }
   }
