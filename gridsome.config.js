@@ -3,11 +3,10 @@
 
 // Changes here require a server restart.
 // To restart press CTRL + C in terminal and run `gridsome develop`
-
 module.exports = {
   siteName: 'Hunter Trammell',
   siteUrl: 'https://hunter-trammell.netlify.com/',
-  siteDescription: 'A minimalist blog built with Gridsome',
+  siteDescription: "Hiya! This is where you will find all of my tutorials, articles, thought's of the day, etc.",
   plugins: [
     {
       use: '@gridsome/source-filesystem',
@@ -23,6 +22,6 @@ module.exports = {
     }
   ],
   templates: {
-      Post: '/:title'
-    }
+    Post: '/blog/:title'
+  }
 }

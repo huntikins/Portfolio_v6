@@ -28,5 +28,6 @@ body, html {
   padding:0;
 }
 h1, h2, h3, h4, h5, h6 {font-weight:400;font-family: 'Patua One', cursive;}
-.font-fredoka {font-weight:400;font-family: 'Patua One', cursive;}
+.font-primary {font-weight:400;font-family: 'Patua One', cursive;}
+.font-primary--light {font-weight:100;font-family: 'Patua One', cursive;}
 </style>

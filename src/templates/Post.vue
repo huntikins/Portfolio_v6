@@ -52,15 +52,15 @@ query Post ($path: String!) {
  }
  p {
    a {
-     font-weight: 900;
-     color: black;
-     text-decoration: none;
+     font-weight: 900 !important;
+     color: black !important;
+     text-decoration: none !important;
      transition: .25s all ease-in-out;
-     border-bottom: 2px solid transparent;
+     border-bottom: 2px solid transparent !important;
      &:hover {
-       color: gray;
+       color: gray !important;
        text-decoration: none;
-       border-bottom: 2px solid gray;
+       border-bottom: 2px solid gray !important;
      }
    }
  }
