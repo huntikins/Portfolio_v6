@@ -11,16 +11,13 @@
 export default {
  methods: {
    isHomepage: () => {
-     if(window){
-       var current = window.location.pathname;
-        if (current == '/') {
-          return false
-        } else {
-          return true
-        }
-     } else {
-       return true;
-     }
+    // var current = window.location.pathname;
+    // if (current == '/') {
+    //   return false
+    // } else {
+    //   return true
+    // }
+    return true;
    }
  }
 }
