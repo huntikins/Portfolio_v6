@@ -4,9 +4,9 @@
       <div class="container">
         <div class="row">
           <div class="page_home-content text-center pb-4">
-            <h1 class="pb-2">Web Development<br>Tutorials, Tips, & Tidbits</h1>
+            <h1 class="pb-2">Web Development<br>Tutorials, Tips, and Tidbits</h1>
             <p class="pb-1 mb-0 pt-1 quote"><em>"The largest room in the world is the room for improvement."</em></p>
-            <p class="pb-0 mb-0">What a powerful sentiment, as a Full Stack Web Developer I am constantly reminded of this ever expansive room for improvement. There are always new technologies to learn, a javascript method to discover, or even development tools to take advantage of. In this infinite room, how does one quench that endless thirst for knowledge? We drink until we're full &mdash; so let's crack open a cold one and dive into some Web Development concepts.</p>
+            <p class="pb-0 mb-0">While I can't say where that quote originated, I can say as a Full Stack Web Developer I am constantly reminded of this ever expansive room for improvement. There are always new technologies to learn, a javascript method to discover, or even development tools to take advantage of. In this infinite room, how does one quench that endless thirst for knowledge? We drink until we're full &mdash; so let's crack open a cold one and dive into some Web Development concepts.</p>
             <a href="#recent-dev-articles" class="btn btn-secondary my-4">*cracks open cold one*</a>
           </div>
         </div>
@@ -29,18 +29,18 @@ import PostItem from "@/components/PostItem";
 export default {
     metaInfo() {
       return {
-        title: this.$page.title,
-        description: this.$page.description,
+        title: this.$page.meta.siteName,
+        description: this.$page.meta.siteDescription,
         keywords: 'web development, javascript, html, vue, react, front-end, back-end, full-stack, coding',
         openGraph: {
-          title: this.$page.title,
+          title: this.$page.meta.siteName,
           type: 'website',
-          description: this.$page.description
+          description: this.$page.meta.siteDescription
         },
         meta: [
           { name: "twitter:card", content: "summary_large_image" },
-          { name: "twitter:title", content: this.$page.title },
-          { name: "twitter:description", content: this.$page.description },
+          { name: "twitter:title", content: this.$page.meta.siteName },
+          { name: "twitter:description", content: this.$page.meta.siteDescription },
           { name: "twitter:site", content: this.$page.meta.twitter }, 
           { name: "twitter:image", content: this.$page.meta.coverImage },
           { name: "twitter:creator", content: this.$page.meta.twitter },
