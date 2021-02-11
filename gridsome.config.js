@@ -5,12 +5,12 @@
 // To restart press CTRL + C in terminal and run `gridsome develop`
 module.exports = {
   siteName: 'Hunter Trammell',
-  siteUrl: 'https://huntertrammell,dev',
+  siteUrl: 'https://huntertrammell.dev',
   siteDescription: "Web Development Tutorials, Tips, & Tidbits",
   metadata: {
     twitter: '@trammellwebdev',
     author: 'Hunter Trammell',
-    coverImage: 'https://trammellweb.dev/trammellwebdev.jpg'
+    coverImage: 'https://huntertrammell.dev/trammellwebdev.jpg'
   },
   plugins: [
     {
