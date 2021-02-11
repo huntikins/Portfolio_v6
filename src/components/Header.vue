@@ -2,24 +2,14 @@
   <header class="header">
       <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
         <div class="container-fluid d-flex justify-content-center">
-            <g-link to="/" class="navbar-brand font-primary text-lowercase" aria-current="page" exact><span>Hunter</span><g-image  v-if="isHomepage()" src="~/images/hunter.png" alt="Hunter Trammell Initial Logo" width="60px" /><span class="px-2" v-else></span><span> Trammell</span></g-link>
+            <g-link to="/" class="navbar-brand font-primary text-lowercase" aria-current="page" exact>Hunter Trammell</g-link>
         </div>
       </nav>
     </header>
 </template>
 <script>
 export default {
- methods: {
-   isHomepage: () => {
-    // var current = window.location.pathname;
-    // if (current == '/') {
-    //   return false
-    // } else {
-    //   return true
-    // }
-    return true;
-   }
- }
+
 }
 </script>
 <style lang="scss">

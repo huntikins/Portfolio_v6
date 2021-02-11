@@ -3,22 +3,17 @@
     <section class="page_home">
       <div class="container">
         <div class="row">
-          <div class="page_home-content">
-            <div class="row">
-              <div class="col-md-6 col-sm-12 page_home-content--logo">
-                <g-image src="~/images/hunter.png" alt="Hunter Trammell Initial Logo" width="200"/>
-              </div>
-              <div class="col-md-6 col-sm-12 page_home-content--intro">
-                <h1 class="mb-0 pb-0"><Typewriter word="Welcome"/></h1>
-                <p>Hiya! This is where you will find all of my tutorials, articles, thought's of the day, etc.</p>
-              </div>
-            </div>
+          <div class="page_home-content text-center pb-4">
+            <h1 class="pb-2">Web Development<br>Tutorials, Tips, & Tidbits</h1>
+            <p class="pb-1 mb-0 pt-1 quote"><em>"The largest room in the world is the room for improvement."</em></p>
+            <p class="pb-0 mb-0">What a powerful sentiment, as a Full Stack Web Developer I am constantly reminded of this ever expansive room for improvement. There are always new technologies to learn, a javascript method to discover, or even development tools to take advantage of. In this infinite room, how does one quench that endless thirst for knowledge? We drink until we're full &mdash; so let's crack open a cold one and dive into some Web Development concepts.</p>
+            <a href="#recent-dev-articles" class="btn btn-secondary my-4">*cracks open cold one*</a>
           </div>
         </div>
       </div>
     </section>
      <section class="page_home-blog">
-      <h2 class="mb-4 py-2 page_home-blog--header text-white bg-dark text-lowercase">Recent Blog Posts</h2>
+      <h2 id="recent-dev-articles" class="mb-4 py-2 page_home-blog--header text-white bg-dark text-lowercase">Recent Web Development Articles</h2>
       <div class="container">
         <div class="row row-cols-1 row-cols-md-3 g-4 py-4 page_home-blog--posts">
           <PostItem v-for="post in $page.posts.edges" :key="post.node.id" :post="post.node" />
@@ -32,8 +27,25 @@
 import Typewriter from '@/components/Typewriter.vue'
 import PostItem from "@/components/PostItem";
 export default {
-  metaInfo: {
-    title: 'Welcome'
+    metaInfo() {
+      return {
+        title: this.$page.title,
+        description: this.$page.description,
+        keywords: 'web development, javascript, html, vue, react, front-end, back-end, full-stack, coding',
+        openGraph: {
+          title: this.$page.title,
+          type: 'website',
+          description: this.$page.description
+        },
+        meta: [
+          { name: "twitter:card", content: "summary_large_image" },
+          { name: "twitter:title", content: this.$page.title },
+          { name: "twitter:description", content: this.$page.description },
+          { name: "twitter:site", content: this.$page.meta.twitter }, 
+          { name: "twitter:image", content: this.$page.meta.coverImage },
+          { name: "twitter:creator", content: this.$page.meta.twitter },
+        ]
+      }
   },
   components: {
     Typewriter,
@@ -44,9 +56,11 @@ export default {
 
 <page-query>
 query {
-  metadata {
+  meta: metadata {
     siteName
     siteDescription
+    twitter
+    coverImage
   }
   posts: allPost {
       edges {
@@ -55,6 +69,7 @@ query {
           title
           image
           readmore
+          author
           timeToRead
           description
           date (format: "MMM D YYYY")
@@ -71,46 +86,19 @@ query {
   background-color: lightgray;
   &-content{
     padding: 1rem 1rem;
-    &--logo {
-      display: flex;
-      justify-content: flex-end;
-      align-items: center;
-      @media(max-width: 767px){
-        justify-content: center;
-        img {
-          width: 100px;
-        }
-      }
-    }
-    &--intro {
-      display: flex;
-      justify-content: flex-start;
-      align-items: center;
-      flex-direction: column;
-      text-align: left;
-      padding: 1.5rem 0;
-      p, h1 {
-        text-align:left !important;
-        padding: 1rem 1rem 0;
-        margin-right: auto;
-        @media(max-width: 767px){
-          text-align: center !important;
-          margin: 0 auto;
-        }
-      }
-      p {
-        width: 50%;
-        @media(max-width: 992px){
-          width: 75%;
-        }
-        @media(max-width: 500px){
-          width: 100%;
-        }
-      }
+    p, h1 {
+      text-align: center !important;
+      padding: 0 1rem;
+      margin-right: auto;
       @media(max-width: 767px){
         text-align: center !important;
-        padding-top: 0;
+        margin: 0 auto;
       }
+    }
+    .quote {
+      font-weight: 600;
+      color: #000;
+      font-size: 16px;
     }
   }
   &-blog{

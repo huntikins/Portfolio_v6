@@ -5,8 +5,13 @@
 // To restart press CTRL + C in terminal and run `gridsome develop`
 module.exports = {
   siteName: 'Hunter Trammell',
-  siteUrl: 'https://hunter-trammell.netlify.com/',
-  siteDescription: "Hiya! This is where you will find all of my tutorials, articles, thought's of the day, etc.",
+  siteUrl: 'https://huntertrammell,dev',
+  siteDescription: "Web Development Tutorials, Tips, & Tidbits",
+  metadata: {
+    twitter: '@trammellwebdev',
+    author: 'Hunter Trammell',
+    coverImage: 'https://trammellweb.dev/trammellwebdev.jpg'
+  },
   plugins: [
     {
       use: '@gridsome/source-filesystem',
