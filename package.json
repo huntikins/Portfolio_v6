@@ -2,19 +2,27 @@
   "name": "my-project",
   "private": true,
   "scripts": {
-    "build": "gridsome build",
-    "develop": "gridsome develop",
-    "explore": "gridsome explore"
+    "start": "npm run watch:css && gridsome develop",
+    "build": "npm run build:css && gridsome build",
+    "explore": "gridsome explore",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject",
+    "build:css": "postcss src/main.css -o src/stylesheet/styles.css",
+    "watch:css": "postcss src/main.css -o src/stylesheet/styles.css"
   },
   "dependencies": {
+    "@fullhuman/postcss-purgecss": "^2.1.0",
     "@gridsome/plugin-sitemap": "^0.4.0",
     "@gridsome/remark-prismjs": "^0.3.0",
     "@gridsome/source-filesystem": "^0.6.2",
     "@gridsome/transformer-remark": "^0.5.0",
     "gridsome": "^0.7.0",
-    "gridsome-plugin-seo": "^1.0.1"
+    "gridsome-plugin-seo": "^1.0.1",
+    "tailwindcss": "^1.2.0"
   },
   "devDependencies": {
+    "autoprefixer": "^9.7.5",
+    "postcss-cli": "^7.1.0",
     "node-sass": "^4.13.1",
     "sass-loader": "^8.0.2"
   }
