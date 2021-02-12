@@ -11,11 +11,11 @@ author: 'Hunter Trammell'
 > Our Hero scrolls casually through a webpage when suddenly everything goes dark! Feverishly, they spin the scroll wheel on their mouse but it's no use, our Hero is trapped. Clicks ring through the air trying to dismiss the beast but not even the point of their cursor can penetrate the 80% opacity fog that has engulfed our Hero's webpage. Drifting closer to the center of the webpage, they discover an island brimming with text and inputs. The Hero's Heartbeat begins to slow as their gaze is affixed on the X in the top right corner, a way out of this madness. The tip of their index finger shatters their mouse as the black fog dissolves into oblivion. The modal has been slain.
  
 ## **Overview**
-We are going to run through how to build a reusable modal component for React. Utilizing the onClick event attribute we will be able to trigger our model wherever it is needed across the app. Since we want this modal component to be reusable, we need to be able to pass content into the component via props and children so that we can customize text for each implementation. Modern UX libraries like [Bootstrap](https://getbootstrap.com/) already have these components pre-built and ready for your use, but as great as those libraries can be, sometimes you just need to create a quick component that doesn't require third party assets to render. This tutorial aims to help you better understand React concepts through the construction of a dynamic modal component. To see the completed component, take a look at this [codepen](https://codepen.io/huntertrammell/pen/wvozBxz).
+We are going to run through how to build a reusable modal component for React. Utilizing the onClick event attribute we will be able to trigger our model wherever it is needed across the app. Since we want this modal component to be reusable, we need to be able to pass content into the component via props and children so that we can customize text for each implementation. Modern UX libraries like [Bootstrap](https://getbootstrap.com/) already have these components pre-built and ready for your use, but as great as those libraries can be, sometimes you just need to create a quick component that doesn't require third party assets to render. This tutorial aims to help you better understand React concepts through the construction of a dynamic modal component. To see the completed component, take a look at this [Codepen](https://codepen.io/huntertrammell/pen/wvozBxz).
  
 ## **What Is A Modal?**
  
-Modal refers to an element that is rendered above the main content of a webpage that the user must interact with in some form to dismiss. Using a modal in your application is a really good way to add another level of user experience to your app, while this article primarily focuses on the construction of a modal in React, if you are interested in learning more about how best to implement these from a user experience standpoint, [here](https://uxplanet.org/modality-the-one-ux-concept-you-need-to-understand-when-designing-intuitive-user-interfaces-e5e941c7acb1) is a great article that goes in depth on that subject.
+Modal refers to an element that is rendered above the main content of a webpage that the user must interact with in some form to dismiss. Using a modal in your application is a really good way to add another level of user experience to your app, while this article primarily focuses on the construction of a modal in React, if you are interested in learning more about how best to implement these from a user experience standpoint, [this is a great article](https://uxplanet.org/modality-the-one-ux-concept-you-need-to-understand-when-designing-intuitive-user-interfaces-e5e941c7acb1) that goes in depth on that subject.
  
 ## **Setup React Environment**
  
@@ -142,8 +142,10 @@ class Modal extends React.Component {
            return null;
        }
        return (
-           <div class="modal">
-               <h1>Hello World</h1>
+           <div class="modal=overlay">
+                <div class="modal">
+                    <h1>Hello World</h1>
+                </div>
            </div>
        );
    }
@@ -152,21 +154,32 @@ class Modal extends React.Component {
  
 Create a css file and link it with the html, this center's our modal
 ```css
+.modal-overlay {
+  height: 100vh;
+  width: 100vw;
+  position: fixed;
+  overflow: hidden;
+  z-index: 99998;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0,0,0,0.8);
+}
 .modal {
-   height: 200px;
-   width: 400px;
-   position: absolute;
-   z-index: 99999;
-   top: 50%;
-   left: 50%;
-   display: flex;
-   align-items: center;
-   justify-content: center;
-   flex-direction: column;
-   transform: translate(-50%, -50%);
-   border: 1px solid black;
-   background-color: #fffff0;
-   box-shadow: 0 0 700px 700px rgba(0, 0, 0, 0.8);
+  height: 200px;
+  width: 400px;
+  position: absolute;
+  z-index: 99999;
+  top: 50%;
+  left: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  transform: translate(-50%, -50%);
+  border: 1px solid black;
+  background-color: #fffff0;
 }
 ```
  
@@ -211,10 +224,12 @@ class Modal extends React.Component {
            return null;
        }
        return (
-            <div class="modal">
-               <h1>Hello World</h1>
-               <button onClick={this.onClose}>close</button>
-           </div>
+            <div class="modal=overlay">
+                <div class="modal">
+                    <h1>Hello World</h1>
+                    <button onClick={this.onClose}>close</button>
+                </div>
+            </div>
        );
    }
 }
@@ -237,14 +252,14 @@ class Modal extends React.Component {
            return null;
        }
        return (
-            <div class="modal">
-               <h1>{{this.props.title}}</h1>
-               <!--This allows us to use what was placed inside the Modal Component in our Toggle Component-->
-               <div>{this.props.children}</div>
-           <button onClick={this.onClose}>
-           close
-         </button>
-           </div>
+            <div class="modal=overlay">
+                <div class="modal">
+                    <h1>{{this.props.title}}</h1>
+                    <!--This allows us to use what was placed inside the Modal Component in our Toggle Component-->
+                    <div>{this.props.children}</div>
+                    <button onClick={this.onClose}>close</button>
+                </div>
+            </div>
        );
    }
 }
@@ -289,7 +304,5 @@ I hope you found this tutorial helpful in explaining how we can use state and pr
 **Cookies**: Use [Cookies](https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/API/cookies) to check if the modal has already been triggered and based on that display or hide the modal from the user - this is especially helpful for modals that are triggered by a non-interactive event like session duration or scrolling.
  
 **Teleportation**: Sometimes, rendering modals inside of a navigation bar or other areas of your app seems like it doesn't fit the overall structure of your HTML document. Using the [Teleportation](https://medium.com/better-programming/what-is-react-teleportation-7d9c5f6eacee) property in React you can keep your structure organized and place things where they make the most sense.
- 
-If you liked this article or have questions of comments feel free to reach out on twitter [@trammellwebdev](https://twitter.com/trammellwebdev)
  
 

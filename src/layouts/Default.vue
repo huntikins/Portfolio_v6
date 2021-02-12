@@ -1,11 +1,11 @@
 <template>
   <div>
     <Header />
-    <main class="pb-4">
+    <main>
     <slot/>
     </main>
-    <footer class="mt-4">
-      <small class="text-center d-block text-light py-1 bg-dark">&copy; {{ new Date().getFullYear() }} Hunter Trammell | Built with <span>&hearts;</span> using <strong><a href="https://twitter.com/gridsome" class="text-white text-decoration-none font-fredoka" target="_blank" rel="noopener">@gridsome</a></strong> & <strong><a href="https://twitter.com/netlify" class="text-white text-decoration-none font-fredoka" target="_blank" rel="noopener">@netlify</a></strong></small>
+    <footer>
+      <small>&copy; {{ new Date().getFullYear() }} Hunter Trammell | Built with <span>&hearts;</span> using <strong><a href="https://twitter.com/gridsome" target="_blank" rel="noopener">@gridsome</a></strong> & <strong><a href="https://twitter.com/netlify" target="_blank" rel="noopener">@netlify</a></strong></small>
     </footer>
 </div>
 </template>
@@ -21,13 +21,32 @@ export default {
 </script>
 
 <style lang="scss">
-@import url('https://fonts.googleapis.com/css2?family=Patua+One&family=Raleway&display=swap');
+main {
+  padding-top: 9vh;
+}
 body, html {
-  font-family: 'Raleway', sans-serif;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 300;
   margin:0;
   padding:0;
+  background-color: whitesmoke;
+  color: #303030;
 }
-h1, h2, h3, h4, h5, h6 {font-weight:400;font-family: 'Patua One', cursive;}
-.font-primary {font-weight:400;font-family: 'Patua One', cursive;}
-.font-primary--light {font-weight:100;font-family: 'Patua One', cursive;}
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Jost', sans-serif;
+  font-weight: 600;
+}
+footer {
+  background-color: teal;
+  padding: 2rem;
+  text-align: center;
+  small {
+    color: white;
+    a {
+      color: white;
+      font-weight: 900;
+      text-decoration: none;
+    }
+  }
+}
 </style>
