@@ -1,30 +1,25 @@
 <template>
   <Layout>
-    <section class="page_home">
-      <div class="container">
-        <div class="row">
-          <div class="page_home-content text-center pb-4">
-            <h1 class="pb-2">Web Development<br>Tutorials, Tips, and Tidbits</h1>
-            <p class="pb-1 mb-0 pt-1 quote"><em>"The largest room in the world is the room for improvement."</em></p>
-            <p class="pb-0 mb-0">While I can't say where that quote originated, I can say as a Full Stack Web Developer I am constantly reminded of this ever expansive room for improvement. There are always new technologies to learn, a javascript method to discover, or even development tools to take advantage of. In this infinite room, how does one quench that endless thirst for knowledge? We drink until we're full &mdash; so let's crack open a cold one and dive into some Web Development concepts.</p>
-            <a href="#recent-dev-articles" class="btn btn-secondary my-4">*cracks open cold one*</a>
-          </div>
+    <div class="page_home">
+      <section class="page_home-intro">
+        <h1>Web Development<br><span>Tutorials, Tips, and Tidbits</span></h1>
+        <div class="page_home-intro--body">
+          <p class="page_home-intro--quote"><em>"The largest room in the world is the room for improvement."</em></p>
+          <p class="page_home-intro--tagline">While I can't say where that quote originated, I can say as a Full Stack Web Developer I am constantly reminded of this ever expansive room for improvement. There are always new technologies to learn, a javascript method to discover, or even development tools to take advantage of. In this infinite room, how does one quench that endless thirst for knowledge? We drink until we're full &mdash; so let's crack open a cold one and dive into some Web Development concepts.</p>
+          <a href="#recent-dev-articles" class="page_home-intro--btn">DIVE IN</a>
         </div>
-      </div>
-    </section>
-     <section class="page_home-blog">
-      <h2 id="recent-dev-articles" class="mb-4 py-2 page_home-blog--header text-white bg-dark text-lowercase">Recent Web Development Articles</h2>
-      <div class="container">
-        <div class="row row-cols-1 row-cols-md-3 g-4 py-4 page_home-blog--posts">
+      </section>
+      <section class="page_home-blog">
+        <h2 id="recent-dev-articles" class="page_home-blog--header">Recent Web Development Articles</h2>
+        <div class="page_home-blog--posts">
           <PostItem v-for="post in $page.posts.edges" :key="post.node.id" :post="post.node" />
         </div>
-      </div>
-    </section>
+      </section>
+    </div>
   </Layout>
 </template>
 
 <script>
-import Typewriter from '@/components/Typewriter.vue'
 import PostItem from "@/components/PostItem";
 export default {
     metaInfo() {
@@ -48,7 +43,6 @@ export default {
       }
   },
   components: {
-    Typewriter,
     PostItem
   }
 }
@@ -58,6 +52,7 @@ export default {
 query {
   meta: metadata {
     siteName
+    siteUrl
     siteDescription
     twitter
     coverImage
@@ -83,33 +78,75 @@ query {
 
 <style lang="scss">
 .page_home {
-  background-color: lightgray;
-  &-content{
-    padding: 1rem 1rem;
-    p, h1 {
-      text-align: center !important;
-      padding: 0 1rem;
-      margin-right: auto;
-      @media(max-width: 767px){
-        text-align: center !important;
-        margin: 0 auto;
+  &-intro {
+    padding: 2rem 2rem;
+    height: 550px;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    text-align: left;
+    background-color: lightgray;
+    @media(max-width: 1100px){
+    padding: 2rem 2rem;
+    height: 100%;
+    }
+    h1 {
+      font-size: 3rem;
+      color: teal;
+      margin-bottom: 0;
+      @media(max-width: 735px){
+        margin: 0;
+        width: 100%;
+      }
+      span {
+        color: #303030;
+        font-family: 'Open Sans', sans-serif;
+        font-weight: 100;
+        font-style: italic;
       }
     }
-    .quote {
+    &--body {
+      margin-top: 1rem;
+      padding-bottom: 2rem;
+      width: 60%;
+      @media(max-width: 1100px){
+        width: 100%;
+      }
+    }
+    &--tagline {
+      padding-bottom: 1rem;
+      font-size: 1.15rem;
+      letter-spacing: .1rem;
+    }
+    &--quote {
+      font-weight: 500;
+      font-size: 1.1rem;
+    }
+    &--btn {
+      padding: .5rem 3rem;
+      border-radius: 5px;
+      background-color: teal;
+      font-size: 1.15rem;
+      letter-spacing: .15rem;
+      text-decoration: none;
+      color: whitesmoke;
+      font-family: 'Jost', sans-serif;
       font-weight: 600;
-      color: #000;
-      font-size: 16px;
     }
   }
   &-blog{
+    padding: 0 2rem 4rem;
     &--header {
-      border-top: 4px solid black;
-      border-bottom: 4px solid black;
+      font-size: 2.5rem;
       text-align: center;
-      letter-spacing: .25rem;
+      color: teal;
     }
-    &--post {
-      text-align: left !important;
+    &--posts {
+      padding: 2rem;
+      padding-bottom: 0;
+      @media(max-width: 735px){
+        padding: 2rem 0;
+      }
     }
   }
 }

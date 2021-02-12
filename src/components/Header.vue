@@ -1,36 +1,55 @@
 <template>
-  <header class="header">
-      <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-        <div class="container-fluid d-flex justify-content-center">
-            <g-link to="/" class="navbar-brand font-primary text-lowercase" aria-current="page" exact>Hunter Trammell</g-link>
-        </div>
+  <header>
+      <nav>
+        <g-link class="header_nav-brand" to="/" aria-current="page" exact>Hunter Trammell</g-link>
+        <ul class="header_nav">
+          <li class="header_nav-item"><g-link to="/blog/" aria-current="page">Blog</g-link></li>
+          <li class="header_nav-item"><g-link to="/portfolio/" aria-current="page">Portfolio</g-link></li>
+          <li class="header_nav-item"><g-link to="/about/" aria-current="page">About</g-link></li>
+          <li class="header_nav-item"><g-link to="/contact/" aria-current="page">Contact</g-link></li>
+        </ul>
       </nav>
     </header>
 </template>
-<script>
-export default {
-
-}
-</script>
 <style lang="scss">
-.navbar {
-  border-top: 4px solid black;
-  border-bottom: 4px solid black;
-  span {
-    font-size: 32px;
-    @media(max-width: 350px){
-        font-size: 24px;
-      }
-      @media(max-width: 350px){
-        font-size: 24px;
-      }
-  }
-  &-brand {
-    letter-spacing: .25rem;
-    display: flex;
+header {
+  position: fixed;
+  height: 10vh;
+  width: 100vw;
+  background-color: lightgray;
+  nav {
+    height: 10vh;
+    padding: 0 2rem;
+    display:flex;
     align-items: center;
-    justify-content: center;
-    margin-right: 0 !important;
+    justify-content: space-between;
+    @media(max-width: 735px){
+      flex-direction: column;
+      padding: 1rem 2rem;
+      height: 6.5vh;
+    }
+    @media(max-width: 470px){
+      font-size: 14px;
+    }
+    a {
+      color: teal;
+      text-decoration: none;
+      text-transform: uppercase;
+      letter-spacing: .15rem;
+      font-weight: 900;
+    }
+  }
+  .header_nav {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    &-item{
+      display: inline;
+      padding: 0 1rem;
+      @media(max-width: 470px){
+        padding: 0 .5rem;
+      }
+    }
   }
 }
 </style>
