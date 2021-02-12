@@ -24,15 +24,6 @@ export default {
 </script>
 
 <style lang="scss">
-.card-img-top {
-  filter: grayscale(1);
-  transition: filter .5s ease;
-}
-.card {
-  &:hover {
-    .card-img-top {
-      filter: grayscale(0);
-    }
-  }
-}
+
+
 </style>
