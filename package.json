@@ -2,28 +2,32 @@
   "name": "my-project",
   "private": true,
   "scripts": {
-    "start": "npm run watch:css && gridsome develop",
+    "start": "npm run watch:css",
     "build": "npm run build:css && gridsome build",
     "explore": "gridsome explore",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject",
-    "build:css": "postcss src/main.css -o src/stylesheet/styles.css",
-    "watch:css": "postcss src/main.css -o src/stylesheet/styles.css"
+    "watch:css": "node-sass src/style/scss/main.scss src/style/css/style.css -w",
+    "compile:sass": "node-sass src/style/scss/main.scss src/style/css/style.comp.css",
+    "concat:css": "concat -o src/style/css/style.concat.css src/style/css/icon-font.css src/style/css/style.comp.css",
+    "prefix:css": "postcss --use autoprefixer -b \"last 10 versions\" src/style/css/style.concat.css -o src/style/css/style.prefix.css",
+    "compress:css": "node-sass src/style/css/style.prefix.css src/style/css/style.css --output-style compressed",
+    "build:css": "npm-run-all compile:sass concat:css prefix:css compress:css"
   },
   "dependencies": {
-    "@fullhuman/postcss-purgecss": "^2.1.0",
     "@gridsome/plugin-sitemap": "^0.4.0",
     "@gridsome/remark-prismjs": "^0.3.0",
     "@gridsome/source-filesystem": "^0.6.2",
     "@gridsome/transformer-remark": "^0.5.0",
     "gridsome": "^0.7.0",
-    "gridsome-plugin-seo": "^1.0.1",
-    "tailwindcss": "^1.2.0"
+    "gridsome-plugin-seo": "^1.0.1"
   },
   "devDependencies": {
-    "autoprefixer": "^9.7.5",
-    "postcss-cli": "^7.1.0",
-    "node-sass": "^4.13.1",
-    "sass-loader": "^8.0.2"
+    "autoprefixer": "^9.5.1",
+    "concat": "^1.0.3",
+    "css-loader": "^2.1.1",
+    "node-sass": "^4.11.0",
+    "npm-run-all": "^4.1.5",
+    "postcss-cli": "^6.1.2",
+    "sass-loader": "^8.0.0",
+    "style-loader": "^0.23.1"
   }
 }
