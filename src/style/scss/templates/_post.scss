@@ -65,6 +65,37 @@
         width: auto;
       }
      }
+     --social {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        a {
+          padding: 1rem .5rem 0;
+          svg {
+            height: 30px;
+          }
+          &.facebook {
+            svg {
+              fill: #1877F2;
+            }
+          }
+          &.reddit {
+            svg {
+              fill: #FF4500;
+            }
+          }
+          &.twitter {
+            svg {
+              fill: #1DA1F2;
+            }
+          }
+          &.linkedin {
+            svg {
+              fill: #0A66C2;
+            }
+          }
+        }
+      }
      &--wyzant {
         background: lightgray;
         color: #303030;

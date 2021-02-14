@@ -247,6 +247,22 @@ footer {
     @media (max-width: 720px) {
       .post_page-footer p {
         width: auto; } }
+  .post_page-footer --social {
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+    .post_page-footer --social a {
+      padding: 1rem .5rem 0; }
+      .post_page-footer --social a svg {
+        height: 30px; }
+      .post_page-footer --social a.facebook svg {
+        fill: #1877F2; }
+      .post_page-footer --social a.reddit svg {
+        fill: #FF4500; }
+      .post_page-footer --social a.twitter svg {
+        fill: #1DA1F2; }
+      .post_page-footer --social a.linkedin svg {
+        fill: #0A66C2; }
   .post_page-footer--wyzant {
     background: lightgray;
     color: #303030;

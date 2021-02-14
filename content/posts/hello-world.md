@@ -298,7 +298,7 @@ That's it!
  
 ## **Conclusion**
  
-I hope you found this tutorial helpful in explaining how we can use state and props to create a dynamic modal component for your website using React. I challenge you to add some style and further functionality to this component to make it your own. Here are a few articles that you might be interested in reading if you want to know what can be done to improve this implementation etc.
+I hope you found this tutorial helpful in explaining how we can use state and props to create a dynamic modal component for your website using React. I challenge you to add some style and further functionality to this component to make it your own. Here are a few topics that you might be interested in reading if you want to know what can be done to improve this implementation etc.
  
 **propTypes**: [propTypes](https://reactjs.org/docs/typechecking-with-proptypes.html) allow you to add validation in the props that you use. For example, if we failed to pass the show or the onClose prop to our Modal component, the functionality would not work. By using propTypes, we can set that component to required so that you can't render it without those props present.
  
