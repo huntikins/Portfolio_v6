@@ -7,6 +7,15 @@
       <article v-html="$page.post.content"/>
       <div class="post_page-footer">
         <p>If you liked this article or have questions of comments feel free to reach out on twitter <a href="https://twitter.com/trammellwebdev" target="_blank" rel="noopener">@trammellwebdev</a></p>
+        <div class="post_page-footer--wyzant">
+          <div class="post_page-footer--wyzant-images">
+            <g-image src="~/images/hunter.png"></g-image>
+            <span>&times;</span>
+            <g-image src="https://www.wyzant.com/images/logos/wyzant-logo-symbol-only.png"></g-image>
+          </div>
+          <p><strong>Interested in learning more about&nbsp;{{ $page.post.wyzant }}?</strong><br>Get connected with a tutor on Wyzant who can help grow your skills as a developer. If you signup for a new account using the button below you will get a <br><strong>FREE $40 tutoring credit!</strong></p>
+          <a href="https://is.gd/588GrV" class="post_page-footer--wyzant-btn">Sign Up</a>
+        </div>
       </div>
     </div>
   </Layout>
@@ -57,7 +66,7 @@ query Post ($path: String!) {
     content
     date (format: "D MMMM YYYY")
     timeToRead
+    wyzant
   }
 }
 </page-query>
-
