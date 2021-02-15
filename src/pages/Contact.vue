@@ -3,7 +3,7 @@
     <div class="page_contact">
       <section class="page_contact-intro">
         <h1>Contact</h1>
-        <form name="contact" class="page_contact-form" data-netlify="true" data-netlify-honeypot="bot-field" @submit.prevent="handleSubmit">
+        <form v-if="formSent == false" name="contact" class="page_contact-form" data-netlify="true" data-netlify-honeypot="bot-field" @submit.prevent="handleSubmit">
             <input type="hidden" name="form-name" value="contact" />
             <div class="page_contact-form--group">
                 <label for="name">Full Name</label>
@@ -19,6 +19,7 @@
             </div>
             <button>Submit</button>
         </form>
+        <p v-else>Thank you for your submission, I will get back to you as soon as possible!</p>
       </section>
     </div>
   </Layout>
@@ -94,7 +95,8 @@ export default {
         name: "",
         email: "",
         message: ""
-      }
+      },
+      formSent: false
     }
   },
   methods: {
@@ -116,7 +118,9 @@ export default {
           ...this.form
         }),
         axiosConfig
-      );
+      ).then(() => {
+        this.formSent = true;
+      })
     }
   }
 }
