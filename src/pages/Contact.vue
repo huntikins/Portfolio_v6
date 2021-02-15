@@ -8,15 +8,15 @@
             <input type="hidden" name="form-name" value="contact" />
             <div class="page_contact-form--group">
                 <label for="name">Full Name</label>
-                <input type="text" name="name" id="name" :value="form.name" v-model="form.name" required/>
+                <input type="text" name="name" id="name" v-model="form.name" required/>
             </div>
             <div class="page_contact-form--group">
                 <label for="email">Email</label>
-                <input type="email" name="email" id="email" :value="form.email" v-model="form.email" required/>
+                <input type="email" name="email" id="email" v-model="form.email" required/>
             </div>
             <div class="page_contact-form--group">
                 <label for="message">Message</label>
-                <textarea type="text" name="message" id="message" :value="form.messsage" v-model="form.messsage"  required>
+                <textarea type="text" name="message" id="message" v-model="form.message" required/>
             </div>
             <button>Submit</button>
         </form>
