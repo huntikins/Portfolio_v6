@@ -3,20 +3,19 @@
     <div class="page_contact">
       <section class="page_contact-intro">
         <h1>Contact</h1>
-        <form name="contact" class="page_contact-form--group" data-netlify="true"
-    data-netlify-honeypot="bot-field" @submit.prevent="handleSubmit">
+        <form name="contact" class="page_contact-form" data-netlify="true" data-netlify-honeypot="bot-field" @submit.prevent="handleSubmit">
             <input type="hidden" name="form-name" value="contact" />
             <div class="page_contact-form--group">
                 <label for="name">Full Name</label>
-                <input type="text" name="name" id="name" v-model="form.name" required/>
+                <input type="text" name="name" id="name" v-model="form.name"  placeholder="Full Name" required/>
             </div>
             <div class="page_contact-form--group">
                 <label for="email">Email</label>
-                <input type="email" name="email" id="email" v-model="form.email" required/>
+                <input type="email" name="email" id="email" v-model="form.email" placeholder="Email" required/>
             </div>
             <div class="page_contact-form--group">
                 <label for="message">Message</label>
-                <textarea type="text" name="message" id="message" v-model="form.message" required/>
+                <textarea type="text" name="message" id="message" v-model="form.message" placeholder="Message" required/>
             </div>
             <button>Submit</button>
         </form>
@@ -24,7 +23,47 @@
     </div>
   </Layout>
 </template>
-
+<style lang="scss">
+.page_contact-form {
+    display: block;
+    width: 50%;
+    padding: 2rem 0;
+    &--group{
+        padding-bottom: 1rem;
+        label, input, textarea {
+            width: 100%;
+            display: block;
+            border: none;
+            padding: 10px;
+        }
+        input, textarea {
+            border: 2px solid teal;
+            background: rgba($color: teal, $alpha: .2);
+            border-radius: 5px;
+        }
+        input {
+            height: 30px;
+            border-bottom: 2px solid teal;
+        }
+        textarea {
+            height: 200px;
+        }
+    }
+    button {
+        padding: .5rem 3rem;
+        border-radius: 5px;
+        background-color: teal;
+        font-size: 1.15rem;
+        letter-spacing: .15rem;
+        text-decoration: none;
+        color: whitesmoke;
+        font-family: 'Jost', sans-serif;
+        font-weight: 600;
+        text-transform: uppercase;
+        border: none;
+    }
+}
+</style>
 <script>
 import axios from "axios";
 
