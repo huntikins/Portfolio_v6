@@ -3,7 +3,9 @@
     <div class="page_contact">
       <section class="page_contact-intro">
         <h1>Contact</h1>
-        <form name="contact" class="page_contact-form--group" netlify netlify-honeypot="bot-field" hidden>
+        <form name="contact" class="page_contact-form--group" data-netlify="true"
+    data-netlify-honeypot="bot-field">
+            <input type="hidden" name="form-name" value="contact" />
             <div class="page_contact-form--group">
                 <label for="name">Full Name</label>
                 <input type="text" name="name" id="name" required/>
