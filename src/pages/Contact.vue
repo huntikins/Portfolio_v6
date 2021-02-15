@@ -3,18 +3,18 @@
     <div class="page_contact">
       <section class="page_contact-intro">
         <h1>Contact</h1>
-        <form name="contact" class="page_contact-form--group" netlify>
+        <form name="contact" class="page_contact-form--group" netlify netlify-honeypot="bot-field" hidden>
             <div class="page_contact-form--group">
                 <label for="name">Full Name</label>
-                <input type="text" name="name" id="name"/>
+                <input type="text" name="name" id="name" required/>
             </div>
             <div class="page_contact-form--group">
                 <label for="email">Email</label>
-                <input type="email" name="email" id="email"/>
+                <input type="email" name="email" id="email" required/>
             </div>
             <div class="page_contact-form--group">
                 <label for="message">Message</label>
-                <textarea type="text" name="message" id="message"/>
+                <textarea type="text" name="message" id="message" required>
             </div>
             <input type="submit" value="Submit">
         </form>
