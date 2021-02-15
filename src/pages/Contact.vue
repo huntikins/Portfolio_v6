@@ -4,21 +4,21 @@
       <section class="page_contact-intro">
         <h1>Contact</h1>
         <form name="contact" class="page_contact-form--group" data-netlify="true"
-    data-netlify-honeypot="bot-field">
+    data-netlify-honeypot="bot-field" @submit.prevent="handleSubmit">
             <input type="hidden" name="form-name" value="contact" />
             <div class="page_contact-form--group">
                 <label for="name">Full Name</label>
-                <input type="text" name="name" id="name" required/>
+                <input type="text" name="name" id="name" :value="form.name" v-model="form.name" required/>
             </div>
             <div class="page_contact-form--group">
                 <label for="email">Email</label>
-                <input type="email" name="email" id="email" required/>
+                <input type="email" name="email" id="email" :value="form.email" v-model="form.email" required/>
             </div>
             <div class="page_contact-form--group">
                 <label for="message">Message</label>
-                <textarea type="text" name="message" id="message" required>
+                <textarea type="text" name="message" id="message" :value="form.messsage" v-model="form.messsage"  required>
             </div>
-            <input type="submit" value="Submit">
+            <button>Submit</button>
         </form>
       </section>
     </div>
@@ -26,6 +26,8 @@
 </template>
 
 <script>
+import axios from "axios";
+
 export default {
     metaInfo() {
       return {
@@ -46,6 +48,37 @@ export default {
           { name: "twitter:creator", content: this.$page.meta.twitter },
         ]
       }
+  },
+  data () {
+    return {
+      form: {
+        name: "",
+        email: "",
+        message: ""
+      }
+    }
+  },
+  methods: {
+    encode (data) {
+      return Object.keys(data)
+        .map(
+          key => `${encodeURIComponent(key)}=${encodeURIComponent(data[key])}`
+        )
+        .join("&");
+    },
+    handleSubmit () {
+      const axiosConfig = {
+        header: { "Content-Type": "application/x-www-form-urlencoded" }
+      };
+      axios.post(
+        "/",
+        this.encode({
+          "form-name": "contact",
+          ...this.form
+        }),
+        axiosConfig
+      );
+    }
   }
 }
 </script>
