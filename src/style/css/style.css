@@ -190,6 +190,27 @@ footer {
       .page_home-blog--posts {
         padding: 2rem 0; } }
 
+.page_contact-intro {
+  padding: 2rem 2rem;
+  height: 550px;
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  text-align: left;
+  background-color: lightgray; }
+  @media (max-width: 1100px) {
+    .page_contact-intro {
+      padding: 2rem 2rem;
+      height: 100%; } }
+  .page_contact-intro h1 {
+    font-size: 3rem;
+    color: teal;
+    margin-bottom: 0; }
+    @media (max-width: 735px) {
+      .page_contact-intro h1 {
+        margin: 0;
+        width: 100%; } }
+
 .post_page {
   padding: 2rem 15px;
   margin-right: auto;
