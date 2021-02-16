@@ -7,7 +7,7 @@
           <h3><g-link :to="post.path">{{post.title}}</g-link></h3>
           <small><span>{{date}}</span>&nbsp;&mdash;&nbsp;<span>{{post.timeToRead}} min read</span></small>
           <p>{{post.description}}</p>
-          <g-link class="post_preview-card--btn" :to="post.path">{{post.readmore}}</g-link>
+          <g-link class="btn" :to="post.path">{{post.readmore}}</g-link>
         </div>
       </div>
     </g-link>

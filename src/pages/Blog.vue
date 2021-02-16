@@ -14,17 +14,17 @@ export default {
     metaInfo() {
       return {
         title: this.$page.meta.siteName,
-        description: this.$page.meta.siteDescription,
+        description: this.$page.meta.blogDescription,
         keywords: 'web development, javascript, html, vue, react, front-end, back-end, full-stack, coding',
         openGraph: {
           title: this.$page.meta.siteName,
           type: 'website',
-          description: this.$page.meta.siteDescription
+          description: this.$page.meta.blogDescription
         },
         meta: [
           { name: "twitter:card", content: "summary_large_image" },
           { name: "twitter:title", content: this.$page.meta.siteName },
-          { name: "twitter:description", content: this.$page.meta.siteDescription },
+          { name: "twitter:description", content: this.$page.meta.blogDescription },
           { name: "twitter:site", content: this.$page.meta.twitter }, 
           { name: "twitter:image", content: this.$page.meta.coverImage },
           { name: "twitter:creator", content: this.$page.meta.twitter },
@@ -42,7 +42,7 @@ query {
   meta: metadata {
     siteName
     siteUrl
-    siteDescription
+    blogDescription
     twitter
     coverImage
   }

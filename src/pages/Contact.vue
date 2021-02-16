@@ -3,6 +3,7 @@
     <div class="page_contact">
       <section class="page_contact-intro">
         <h1>Contact</h1>
+        <h2>Have a question? Send me a message and I'll try to get back to you as soon as I can. Alternativley, feel free to reach out via Twitter <a href="https://twitter.com/trammellwebdev" target="_blank" rel="noopener">@trammellwebdev</a>!</h2>
         <form v-if="formSent == false" name="contact" class="page_contact-form" data-netlify="true" data-netlify-honeypot="bot-field" @submit.prevent="handleSubmit">
             <input type="hidden" name="form-name" value="contact" />
             <div class="page_contact-form--group">
@@ -17,54 +18,14 @@
                 <label for="message">Message</label>
                 <textarea type="text" name="message" id="message" v-model="form.message" placeholder="Message" required/>
             </div>
-            <button>Submit</button>
+            <button class="btn">Submit</button>
         </form>
-        <p v-else>Thank you for your submission, I will get back to you as soon as possible!</p>
+        <p v-else>{{ submissionMsg }}</p>
       </section>
     </div>
   </Layout>
 </template>
-<style lang="scss">
-.page_contact-form {
-    display: block;
-    width: 50%;
-    padding: 2rem 0;
-    &--group{
-        padding-bottom: 1rem;
-        label, input, textarea {
-            width: 100%;
-            display: block;
-            border: none;
-            padding: 10px;
-        }
-        input, textarea {
-            border: 2px solid teal;
-            background: rgba($color: teal, $alpha: .2);
-            border-radius: 5px;
-        }
-        input {
-            height: 30px;
-            border-bottom: 2px solid teal;
-        }
-        textarea {
-            height: 200px;
-        }
-    }
-    button {
-        padding: .5rem 3rem;
-        border-radius: 5px;
-        background-color: teal;
-        font-size: 1.15rem;
-        letter-spacing: .15rem;
-        text-decoration: none;
-        color: whitesmoke;
-        font-family: 'Jost', sans-serif;
-        font-weight: 600;
-        text-transform: uppercase;
-        border: none;
-    }
-}
-</style>
+
 <script>
 import axios from "axios";
 
@@ -94,9 +55,12 @@ export default {
       form: {
         name: "",
         email: "",
-        message: ""
+        message: "",
+        error: ""
       },
-      formSent: false
+      formSent: false,
+      submissionMsg: '',
+      formError: false
     }
   },
   methods: {
@@ -118,8 +82,17 @@ export default {
           ...this.form
         }),
         axiosConfig
-      ).then(() => {
+      ).then(res => {
         this.formSent = true;
+        this.submissionMsg = 'Your message has been sent, I will get back to you as soon as possible!';
+      }).catch(err => {
+        this.formSent = true;
+        this.submissionMsg = 'Uh-Oh, it looks like something went wrong. Hang tight, let me grab some error reporting and refresh your session...';
+        this.formError = true
+        this.errorMsg = err
+        setTimeout(()=>{
+          this.$router.go();
+        }, 5000)
       })
     }
   }
