@@ -28,7 +28,7 @@
             <g-image src="https://www.wyzant.com/images/logos/wyzant-logo-symbol-only.png"></g-image>
           </div>
           <p><strong>Interested in learning more about&nbsp;{{ $page.post.wyzant }}?</strong><br>Get connected with a tutor on Wyzant who can help grow your skills as a developer. If you signup for a new account using the button below you will get a <br><strong>FREE $40 tutoring credit!</strong></p>
-          <a href="https://is.gd/588GrV" class="post_page-footer--wyzant-btn" target="_blank" rel="noopener">Sign Up</a>
+          <a href="https://is.gd/588GrV" class="btn" target="_blank" rel="noopener">Sign Up</a>
         </div>
       </div>
     </div>
@@ -49,7 +49,9 @@ export default {
         openGraph: {
           title: this.$page.post.title,
           type: 'article',
-          description: this.$page.post.description
+          description: this.$page.post.description,
+          image: this.$page.post.image,
+          site_name: this.$page.meta.siteName
         },
         meta: [
           { name: "twitter:card", content: "summary_large_image" },

@@ -1,0 +1,23 @@
+.btn {
+    padding: .5rem 3rem;
+    border-radius: 5px;
+    background-color: teal;
+    font-size: 1.15rem;
+    letter-spacing: .15rem;
+    text-decoration: none;
+    color: whitesmoke;
+    font-family: 'Jost', sans-serif;
+    font-weight: 700;
+    border: 2px solid transparent;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: .2s all ease;
+    box-shadow: 0 0 0 0 rgba($color: #000000, $alpha: 0);
+    &:hover {
+      border: 2px solid teal;
+      background-color: whitesmoke;
+      color: teal;
+      transform: scale(1.05) translate(5px);
+      box-shadow: 10px 7px 0 0 rgba($color: teal, $alpha: .4);
+    }
+  }
