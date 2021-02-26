@@ -2,6 +2,7 @@ header {
     position: fixed;
     height: 10vh;
     width: 100vw;
+    z-index: 99999999;
     background-color: lightgray;
     nav {
       height: 10vh;

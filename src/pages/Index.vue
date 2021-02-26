@@ -2,17 +2,22 @@
   <Layout>
     <div class="page_home">
       <section class="page_home-intro">
-        <h1>Web Development<br><span>Tutorials, Tips, and Tidbits</span></h1>
+        <h1>Hunter Trammell<br><span>Web Developer, Tutor & Author</span></h1>
         <div class="page_home-intro--body">
-          <p class="page_home-intro--quote"><em>"The largest room in the world is the room for improvement."</em></p>
-          <p class="page_home-intro--tagline">While I can't say where that quote originated, I can say as a Full Stack Web Developer I am constantly reminded of this ever expansive room for improvement. There are always new technologies to learn, a javascript method to discover, or even development tools to take advantage of. In this infinite room, how does one quench that endless thirst for knowledge? We drink until we're full &mdash; so let's crack open a cold one and dive into some Web Development concepts.</p>
-          <a href="#recent-dev-articles" class="btn">DIVE IN</a>
+          <p class="page_home-intro--tagline">As you may have deduced from the title, my name is Hunter Trammell and I am a Full Stack Web Developer from Kansas City. Web Development is my passion and I love to share that passion with others whether it is through casual conversation or by way of instruction. I am constantly learning and improving my skills as a developer. If you'd like to learn more about me and my work, click the button below, otherwise keep scrolling to see some of my recent projects & articles.</p>
+          <g-link to="/about/" class="btn">About Me</g-link>
         </div>
       </section>
       <section class="page_home-blog">
-        <h2 id="recent-dev-articles" class="page_home-blog--header">Recent Web Development Articles</h2>
+        <h2 id="recent-dev-articles" class="page_home-blog--header">Articles</h2>
         <div class="page_home-blog--posts">
           <PostItem v-for="post in $page.posts.edges" :key="post.node.id" :post="post.node" />
+        </div>
+      </section>
+      <section class="page_home-portfolio">
+        <h2 id="recent-dev-articles" class="page_home-portfolio--header">Projects</h2>
+        <div class="page_home-portfolio--posts">
+          <PortfolioItem v-for="portfolio in $page.portfolios.edges" :key="portfolio.node.id" :portfolio="portfolio.node" />
         </div>
       </section>
     </div>
@@ -21,6 +26,7 @@
 
 <script>
 import PostItem from "@/components/PostItem";
+import PortfolioItem from "@/components/PortfolioItem";
 export default {
     metaInfo() {
       return {
@@ -45,7 +51,8 @@ export default {
       }
   },
   components: {
-    PostItem
+    PostItem,
+    PortfolioItem
   }
 }
 </script>
@@ -64,13 +71,34 @@ query {
         node {
           id
           title
-          image
           readmore
+          image
           author
           timeToRead
           description
           date (format: "MMM D YYYY")
           path
+        }
+      }
+    }
+    portfolios: allPortfolio {
+      edges {
+        node {
+          id
+          title
+          preview_text
+          preview_photo {
+            url
+            size
+            id
+            width
+            height
+            alternativeText
+          }
+          path
+          built_for
+          github_url
+          live_url
         }
       }
     }

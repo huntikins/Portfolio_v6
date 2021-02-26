@@ -44,7 +44,7 @@
         font-size: 1.1rem;
       }
     }
-    &-blog{
+    &-blog, &-portfolio{
       padding: 0 2rem 4rem;
       &--header {
         font-size: 2.5rem;
@@ -54,9 +54,16 @@
       &--posts {
         padding: 2rem;
         padding-bottom: 0;
+        display: flex;
+        justify-content: space-between;
+        align-items: baseline;
         @media(max-width: 735px){
           padding: 2rem 0;
         }
       }
+    }
+    &-portfolio {
+      background-color: lightgray;
+      padding-top: 1rem;
     }
   }

@@ -24,6 +24,7 @@ header {
   position: fixed;
   height: 10vh;
   width: 100vw;
+  z-index: 99999999;
   background-color: lightgray; }
   header nav {
     height: 10vh;
@@ -89,6 +90,42 @@ header {
     .post_preview-card--body small {
       color: #303030; }
     .post_preview-card--body p {
+      margin-bottom: 2rem;
+      color: #303030; }
+
+.portfolio_preview a {
+  text-decoration: none; }
+
+.portfolio_preview-card {
+  width: 400px;
+  margin: 2rem 0;
+  border-radius: 15px;
+  transition: all .2s ease; }
+  @media (max-width: 735px) {
+    .portfolio_preview-card {
+      margin: 0 auto;
+      width: 100%; } }
+  .portfolio_preview-card:hover {
+    transform: scale(1.05);
+    background-color: white;
+    box-shadow: 25px 15px 0 0 rgba(0, 128, 128, 0.4); }
+  .portfolio_preview-card img {
+    max-width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 15px 15px 0 0; }
+  .portfolio_preview-card--body {
+    padding: .5rem 1rem 2rem; }
+    .portfolio_preview-card--body h3 {
+      font-size: 1.5rem;
+      line-height: 1.25;
+      margin-bottom: .75rem; }
+      .portfolio_preview-card--body h3 a {
+        color: teal;
+        text-decoration: none; }
+    .portfolio_preview-card--body small {
+      color: #303030; }
+    .portfolio_preview-card--body p {
       margin-bottom: 2rem;
       color: #303030; }
 
@@ -179,18 +216,25 @@ footer {
     font-weight: 500;
     font-size: 1.1rem; }
 
-.page_home-blog {
+.page_home-blog, .page_home-portfolio {
   padding: 0 2rem 4rem; }
-  .page_home-blog--header {
+  .page_home-blog--header, .page_home-portfolio--header {
     font-size: 2.5rem;
     text-align: center;
     color: teal; }
-  .page_home-blog--posts {
+  .page_home-blog--posts, .page_home-portfolio--posts {
     padding: 2rem;
-    padding-bottom: 0; }
+    padding-bottom: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline; }
     @media (max-width: 735px) {
-      .page_home-blog--posts {
+      .page_home-blog--posts, .page_home-portfolio--posts {
         padding: 2rem 0; } }
+
+.page_home-portfolio {
+  background-color: lightgray;
+  padding-top: 1rem; }
 
 .page_contact-intro {
   padding: 2rem 50% 2rem 2rem;
