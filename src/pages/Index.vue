@@ -87,7 +87,7 @@ query {
           id
           title
           preview_text
-          preview_photo {
+          cover_photo {
             url
             size
             id
@@ -96,7 +96,6 @@ query {
             alternativeText
           }
           path
-          built_for
           github_url
           live_url
         }
