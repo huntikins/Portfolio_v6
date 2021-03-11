@@ -18,14 +18,14 @@ module.exports = function(api) {
         id: project.id,
         title: project.title,
         preview_text: project.preview_text,
-        tech: project.tech,
+        staxonomies: project.staxonomies,
         article: project.article,
         url: project.url,
         live_url: project.live_url,
         built_for: project.built_for,
         github_url: project.github_url,
         cover_photo: project.cover_photo,
-        preview_photo: project.preview_photo,
+        featured: project.Featured,
       });
     }
   });

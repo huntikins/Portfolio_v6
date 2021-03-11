@@ -15,9 +15,22 @@
         </div>
       </section>
       <section class="page_home-portfolio">
-        <h2 id="recent-dev-articles" class="page_home-portfolio--header">Projects</h2>
-        <div class="page_home-portfolio--posts">
-          <PortfolioItem v-for="portfolio in $page.portfolios.edges" :key="portfolio.node.id" :portfolio="portfolio.node" />
+        <div class="container-fluid">
+          <h2 id="recent-dev-articles" class="page_home-portfolio--header">Recent Projects</h2>
+          <div class="row">
+            <div class="page_home-portfolio--posts col-md-8 col-sm-12">
+              <div class="row">
+                <PortfolioItem v-for="(portfolio, index) in $page.portfolios.edges" :key="portfolio.node.id" :index="index" :portfolio="portfolio.node" />
+              </div>
+            </div>
+            <div class="col-md-4 col-sm-12">
+              <div class="text-left d-flex justify-content-start align-content-center flex-column h-100">
+                <h3>Take a look at my Portfolio</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident ipsam ab enim excepturi a! Ut veniam impedit perspiciatis dolore natus sunt deleniti repellat quo. Tenetur aliquid cum sit molestiae necessitatibus.</p>
+                <g-link to="/portfolio/" class="btn">About Me</g-link>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
     </div>
@@ -81,7 +94,7 @@ query {
         }
       }
     }
-    portfolios: allPortfolio {
+    portfolios: allPortfolio(filter: { featured: { eq: true }}) {
       edges {
         node {
           id
@@ -98,6 +111,17 @@ query {
           path
           github_url
           live_url
+          featured
+          staxonomies {
+            id
+            title
+            url
+          }
+          built_for {
+            id
+            title
+            url
+          }
         }
       }
     }
