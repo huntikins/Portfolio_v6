@@ -1,7 +1,7 @@
 <template>
   <Layout>
     <div class="page_home">
-      <section class="page_home-intro">
+      <section class="page_home-intro d-flex justify-content-center align-items-start flex-column">
         <h1>Web Development<br><span>Tutorials, Tips, and Tidbits</span></h1>
         <div class="page_home-intro--body">
           <p class="page_home-intro--quote"><em>"The largest room in the world is the room for improvement."</em></p>
@@ -10,9 +10,13 @@
         </div>
       </section>
       <section class="page_home-blog">
-        <h2 id="recent-dev-articles" class="page_home-blog--header">Recent Web Development Articles</h2>
+        <h2 id="recent-dev-articles" class="page_home-blog--header pt-4">Recent Web Development Articles</h2>
         <div class="page_home-blog--posts">
-          <PostItem v-for="post in $page.posts.edges" :key="post.node.id" :post="post.node" />
+          <div class="continer-fluid">
+            <div class="row w-100 row-cols-1 row-cols-md-3 row-cols-sm-2 g-4 mx-auto">
+              <PostItem v-for="post in $page.posts.edges" :key="post.node.id" :post="post.node" />
+            </div>
+          </div>
         </div>
       </section>
     </div>

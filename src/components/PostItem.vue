@@ -1,5 +1,5 @@
 <template>
-   <div class="post_preview">
+   <div class="post_preview col p-4">
     <g-link :to="post.path">
       <div class="post_preview-card">
         <g-link :to="post.path"><g-image :src="post.image" :alt="post.description"/></g-link>
@@ -7,7 +7,7 @@
           <h3 class="card-title pt-4"><g-link :to="post.path">{{post.title}}</g-link></h3>
           <small><span>{{date}}</span>&nbsp;&mdash;&nbsp;<span>{{post.timeToRead}} min read</span></small>
           <p>{{post.description}}</p>
-          <g-link class="btn" :to="post.path">{{post.readmore}}</g-link>
+          <g-link class="btn mt-auto" :to="post.path">{{post.readmore}}</g-link>
         </div>
       </div>
     </g-link>

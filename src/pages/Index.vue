@@ -13,7 +13,7 @@
         <div class="row">
           <div class="col-md-4 col-sm-12">
             <div class="text-left d-flex justify-content-center align-items-center h-100">
-              <div class="page_home-portfolio--posts-cta">
+              <div class="page_home-portfolio--posts-cta text-right pt-4" style="text-align:right;">
                 <h3>Give my Blog a read</h3>
                 <p class="my-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident ipsam ab enim excepturi a! Ut veniam impedit perspiciatis dolore natus sunt deleniti repellat quo. Tenetur aliquid cum sit molestiae necessitatibus.</p>
                 <g-link to="/blog/" class="btn">Blog</g-link>
@@ -21,7 +21,7 @@
             </div>
           </div>
           <div class="page_home-blog--posts col-md-8 col-sm-12">
-            <div class="row w-100">
+            <div class="row w-100 row-cols-1 row-cols-md-2 g-4 mx-auto">
               <PostItem v-for="post in $page.posts.edges" :key="post.node.id" :post="post.node" />
             </div>
           </div>
@@ -32,7 +32,7 @@
           <h2 id="recent-dev-articles" class="page_home-portfolio--header pt-4">Recent Projects</h2>
           <div class="row">
             <div class="page_home-portfolio--posts col-md-8 col-sm-12">
-              <div class="row w-100">
+              <div class="row w-100 row-cols-1 row-cols-md-2 g-4 mx-auto">
                 <PortfolioItem v-for="(portfolio, index) in $page.portfolios.edges" :key="portfolio.node.id" :index="index" :portfolio="portfolio.node" />
               </div>
             </div>
@@ -41,7 +41,7 @@
                 <div class="page_home-portfolio--posts-cta">
                   <h3>Take a look at my Portfolio</h3>
                   <p class="my-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident ipsam ab enim excepturi a! Ut veniam impedit perspiciatis dolore natus sunt deleniti repellat quo. Tenetur aliquid cum sit molestiae necessitatibus.</p>
-                  <g-link to="/portfolio/" class="btn">About Me</g-link>
+                  <g-link to="/portfolio/" class="btn">Portfolio</g-link>
                 </div>
               </div>
             </div>
@@ -94,7 +94,7 @@ query {
     twitter
     coverImage
   }
-  posts: allPost {
+  posts: allPost(filter: { featured: { eq: true }}) {
       edges {
         node {
           id

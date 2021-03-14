@@ -1,4 +1,7 @@
 .portfolio_preview {
+  @media(max-width:767px){
+    margin-bottom: 2rem;
+  }
     a {
       text-decoration: none;
     }
@@ -7,7 +10,6 @@
       border-radius: 15px;
       transition: all .2s ease;
       background-color: whitesmoke;
-      max-width: 300px;
       &:hover {
         transform: scale(1.05);
         background-color: white;
@@ -32,19 +34,16 @@
       }
       &--body {
         padding: .5rem 1rem 2rem;
-        display: flex;
-        justify-content: space-between;
-        align-items: flex-start;
-        flex-direction: column;
         h3 {
           font-size: 1.5rem;
           line-height: 1.25;
           color: teal !important;
+          margin-bottom: 0;
+          padding-bottom: 0;
           a {
             color: teal;
             text-decoration: none;
           }
-          margin-bottom: .75rem;
         }
         small {
           color: #303030;
@@ -60,10 +59,11 @@
         }
         ul {
           list-style-type: none;
-          display: inline;
           margin: 0;
-          padding: 0;
+          padding: .25rem 0 .5rem;
           li {
+            display: inline;
+            padding-right: .25rem;
             a {
               color: white;
             }
