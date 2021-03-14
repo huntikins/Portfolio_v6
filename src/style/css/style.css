@@ -7500,33 +7500,58 @@ header {
   text-decoration: none; }
 
 .portfolio_preview-card {
-  margin: 2rem 0;
+  margin: 0 auto;
   border-radius: 15px;
   transition: all .2s ease;
-  background-color: whitesmoke; }
+  background-color: whitesmoke;
+  max-width: 300px; }
   .portfolio_preview-card:hover {
     transform: scale(1.05);
     background-color: white;
     box-shadow: 25px 15px 0 0 rgba(0, 128, 128, 0.4); }
+    .portfolio_preview-card:hover img {
+      opacity: 1; }
+  .portfolio_preview-card--img {
+    background-color: gray; }
   .portfolio_preview-card img {
     max-width: 100%;
     height: auto;
     object-fit: cover;
-    border-radius: 15px 15px 0 0; }
+    border-radius: 15px 15px 0 0;
+    opacity: .7;
+    transition: all .2s ease; }
+    .portfolio_preview-card img:hover {
+      opacity: 1; }
   .portfolio_preview-card--body {
-    padding: .5rem 1rem 2rem; }
+    padding: .5rem 1rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-direction: column; }
     .portfolio_preview-card--body h3, .portfolio_preview-card--body .h3 {
       font-size: 1.5rem;
       line-height: 1.25;
+      color: teal !important;
       margin-bottom: .75rem; }
       .portfolio_preview-card--body h3 a, .portfolio_preview-card--body .h3 a {
         color: teal;
         text-decoration: none; }
     .portfolio_preview-card--body small, .portfolio_preview-card--body .small {
       color: #303030; }
+      .portfolio_preview-card--body small a, .portfolio_preview-card--body .small a {
+        color: teal;
+        text-decoration: none;
+        font-weight: 600; }
     .portfolio_preview-card--body p {
       margin-bottom: 2rem;
       color: #303030; }
+    .portfolio_preview-card--body ul {
+      list-style-type: none;
+      display: inline;
+      margin: 0;
+      padding: 0; }
+      .portfolio_preview-card--body ul li a {
+        color: white; }
 
 main {
   padding-top: 9vh; }
@@ -7634,6 +7659,9 @@ footer {
 .page_home-portfolio {
   background-color: lightgray;
   padding-top: 1rem; }
+
+.page_home-portfolio--posts-cta h3, .page_home-portfolio--posts-cta .h3 {
+  color: teal; }
 
 .page_contact-intro {
   padding: 2rem 50% 2rem 2rem;

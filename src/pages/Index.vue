@@ -9,25 +9,40 @@
         </div>
       </section>
       <section class="page_home-blog">
-        <h2 id="recent-dev-articles" class="page_home-blog--header">Articles</h2>
-        <div class="page_home-blog--posts">
-          <PostItem v-for="post in $page.posts.edges" :key="post.node.id" :post="post.node" />
+        <h2 id="recent-dev-articles" class="page_home-blog--header pt-4">Articles</h2>
+        <div class="row">
+          <div class="col-md-4 col-sm-12">
+            <div class="text-left d-flex justify-content-center align-items-center h-100">
+              <div class="page_home-portfolio--posts-cta">
+                <h3>Give my Blog a read</h3>
+                <p class="my-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident ipsam ab enim excepturi a! Ut veniam impedit perspiciatis dolore natus sunt deleniti repellat quo. Tenetur aliquid cum sit molestiae necessitatibus.</p>
+                <g-link to="/blog/" class="btn">Blog</g-link>
+              </div>
+            </div>
+          </div>
+          <div class="page_home-blog--posts col-md-8 col-sm-12">
+            <div class="row w-100">
+              <PostItem v-for="post in $page.posts.edges" :key="post.node.id" :post="post.node" />
+            </div>
+          </div>
         </div>
       </section>
       <section class="page_home-portfolio">
         <div class="container-fluid">
-          <h2 id="recent-dev-articles" class="page_home-portfolio--header">Recent Projects</h2>
+          <h2 id="recent-dev-articles" class="page_home-portfolio--header pt-4">Recent Projects</h2>
           <div class="row">
             <div class="page_home-portfolio--posts col-md-8 col-sm-12">
-              <div class="row">
+              <div class="row w-100">
                 <PortfolioItem v-for="(portfolio, index) in $page.portfolios.edges" :key="portfolio.node.id" :index="index" :portfolio="portfolio.node" />
               </div>
             </div>
             <div class="col-md-4 col-sm-12">
-              <div class="text-left d-flex justify-content-start align-content-center flex-column h-100">
-                <h3>Take a look at my Portfolio</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident ipsam ab enim excepturi a! Ut veniam impedit perspiciatis dolore natus sunt deleniti repellat quo. Tenetur aliquid cum sit molestiae necessitatibus.</p>
-                <g-link to="/portfolio/" class="btn">About Me</g-link>
+              <div class="text-left d-flex justify-content-center align-items-center h-100">
+                <div class="page_home-portfolio--posts-cta">
+                  <h3>Take a look at my Portfolio</h3>
+                  <p class="my-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident ipsam ab enim excepturi a! Ut veniam impedit perspiciatis dolore natus sunt deleniti repellat quo. Tenetur aliquid cum sit molestiae necessitatibus.</p>
+                  <g-link to="/portfolio/" class="btn">About Me</g-link>
+                </div>
               </div>
             </div>
           </div>

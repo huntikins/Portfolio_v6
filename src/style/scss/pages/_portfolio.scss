@@ -1,0 +1,11 @@
+.page_home{
+    &-portfolio{
+        &--posts{
+            &-cta{
+                h3 {
+                    color: teal;
+                }
+            }
+        }
+    }
+}

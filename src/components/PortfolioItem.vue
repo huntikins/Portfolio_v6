@@ -1,18 +1,19 @@
 <template>
    <div class="portfolio_preview col-md-4 col-sm-12">
-    <g-link :to="portfolio.path">
-      <div class="portfolio_preview-card card">
-        <g-link :to="portfolio.path"><g-image :src="portfolio.cover_photo.url" :alt="portfolio.preview_text" class="card-img-top"/></g-link>
+      <div class="portfolio_preview-card card h-100">
+        <g-link :to="portfolio.path" class="portfolio_preview-card-img"><g-image :src="portfolio.cover_photo.url" :alt="portfolio.preview_text" class="card-img-top"/></g-link>
         <div class="portfolio_preview-card--body card-body">
           <h3><g-link :to="portfolio.path">{{portfolio.title}}</g-link></h3>
-          <small v-if="portfolio.built_for.length"><span>Built for</span>&nbsp;&mdash;&nbsp;<span><a :href="portfolio.built_for[0].url" target="_blank" rel="noopener">{{portfolio.built_for[0].title}}</a></span></small>
-          <p>{{portfolio.preview_text}}</p>
-          <ul>
-            <li v-for="stack in portfolio.staxonomies" :key="stack.id"><a :href="stack.url" target="_blank" rel="noopener">{{stack.title}}</a></li>
-          </ul>
+          <small v-if="portfolio.built_for.length"><span>Built for</span>&nbsp;<span><a :href="portfolio.built_for[0].url" target="_blank" rel="noopener">{{portfolio.built_for[0].title}}</a></span></small>
+          <p class="my-2">{{portfolio.preview_text}}</p>
+          <div class="mt-auto">
+            <small class="pb-1">Built With:</small>
+            <ul>
+              <li v-for="stack in portfolio.staxonomies" :key="stack.id"><span class="badge rounded-pill bg-success"><a :href="stack.url" target="_blank" rel="noopener">{{stack.title}}</a></span></li>
+            </ul>
+          </div>
         </div>
       </div>
-    </g-link>
   </div>
 </template>
 
