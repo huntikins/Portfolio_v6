@@ -78,7 +78,7 @@ query {
           }
           path
           github_url
-          live_url
+          url
           featured
           staxonomies {
             id

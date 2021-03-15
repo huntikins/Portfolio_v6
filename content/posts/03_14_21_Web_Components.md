@@ -1,6 +1,6 @@
 ---
-title: "An Introduction To Web Components"
-description: "In this tutorial we will go over how to create a dynamic modal component in your React application without the need for a UX library. By utilizing React state and props we can create a production ready dynamic modal component that can be reused in various areas of an application."
+title: "A Brief Introduction To Web Components"
+description: "Intro Needs to be written"
 date: 2021-03-14T03:16:00Z
 image: 'https://images.unsplash.com/photo-1589149098258-3e9102cd63d3?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1837&q=80'
 readmore: "Read More"
