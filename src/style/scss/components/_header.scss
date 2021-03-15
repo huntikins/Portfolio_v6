@@ -13,7 +13,6 @@ header {
       @media(max-width: 735px){
         flex-direction: column;
         padding: 1rem 2rem;
-        height: 6.5vh;
       }
       @media(max-width: 470px){
         font-size: 14px;
@@ -24,11 +23,18 @@ header {
         text-transform: uppercase;
         letter-spacing: .15rem;
         font-weight: 900;
+        @media(max-width: 470px){
+          font-size: 14px !important;
+        }
+        &:hover {
+          color: lighten(teal, 5%)
+        }
       }
     }
     .header_nav {
       list-style-type: none;
-      margin: 0;
+      margin-left: auto;
+      margin-right: 0 !important;
       padding: 0;
       &-item{
         display: inline;
