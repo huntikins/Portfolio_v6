@@ -15,7 +15,7 @@
             <div class="text-left d-flex justify-content-center align-items-center h-100">
               <div class="page_home-portfolio--posts-cta text-right pt-4" style="text-align:right;">
                 <h3>Read What I've Written Lately</h3>
-                <p class="my-4">Assuming I get around to writing new content, here is where you can find all of my Web Development Tips, Tricks, and Tidbits.</p>
+                <p class="my-4">As a Full Stack Web Developer I am constantly reminded of the ever expansive room for improvement. There are always new technologies to learn, a javascript method to discover, or even development tools to take advantage of. I'd love to share my experience and assuming I get around to writing new content, here is where you can find all of my Web Development Tips, Tricks, and Tidbits.</p>
                 <g-link to="/blog/" class="btn">Blog</g-link>
               </div>
             </div>
@@ -40,7 +40,7 @@
               <div class="text-left d-flex justify-content-center align-items-center h-100">
                 <div class="page_home-portfolio--posts-cta pt-4">
                   <h3>See What I've Been Working On</h3>
-                  <p class="my-4">I've cataloged the various projects I've built for school, personal, and work. Check back for updates to see what I've built recently.</p>
+                  <p class="my-4">I am thankful that my work can persist past creation and have collected it here for you. Whereas a chef’s creation may only live until the dining guest completes their meal, my work lives as long as the hosting is paid for (or longer if we’re talking GitHub).</p>
                   <g-link to="/portfolio/" class="btn">Portfolio</g-link>
                 </div>
               </div>

@@ -2,9 +2,10 @@
   <Layout>
     <div class="page_home">
       <section class="page_home-intro d-flex justify-content-center align-items-start flex-column">
-        <h1>My Portfolio</h1>
+        <h1>My Portfolio<br><span>Insert Subtitle Here</span></h1>
         <div class="page_home-intro--body">
-          <p class="page_home-intro--tagline">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis sint, eum ducimus hic culpa eveniet, libero quod quam voluptas voluptatibus cupiditate. Maxime recusandae excepturi similique eveniet ullam nam nemo alias.</p>
+          <p class="page_home-intro--quote"><em>"Insert quote about projects and hard work wow"</em></p>
+          <p class="page_home-intro--tagline">This is where I showcase my work, from projects I built learning to code from to websites built for work I’ve gathered all my work into a single repository. I am honored to work in a field where my work can persist past it’s creation. Whereas a chef’s creation may only live until the dining guest completes their meal, my work lives as long as the hosting is paid for (or longer if we’re talking <a href="https://archiveprogram.github.com/arctic-vault/" target="_blank" rel="noopener">GitHub Arctic Code Vault</a>). Each project includes the tech stack used, applicable links and a copy of the sites readme.</p>
           <a href="#projects" class="btn">Projects</a>
         </div>
       </section>

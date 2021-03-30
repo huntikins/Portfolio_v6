@@ -7624,7 +7624,7 @@ header {
           color: white; }
 
 main {
-  padding-top: 9vh; }
+  padding-top: 10vh; }
 
 body, html {
   font-family: 'Open Sans', sans-serif;
@@ -7641,13 +7641,42 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
 footer {
   background-color: teal;
   padding: 2rem;
-  text-align: center; }
+  text-align: center;
+  height: 5vh;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
   footer small, footer .small {
     color: white; }
     footer small a, footer .small a {
       color: white;
       font-weight: 900;
       text-decoration: none; }
+
+.social a {
+  padding: 1rem; }
+  .social a svg {
+    height: 30px; }
+  .social a.facebook svg {
+    fill: #1877F2; }
+  .social a.facebook span {
+    color: #1877F2; }
+  .social a.reddit svg {
+    fill: #FF4500; }
+  .social a.reddit span {
+    color: #FF4500; }
+  .social a.twitter svg {
+    fill: #1DA1F2; }
+  .social a.twitter span {
+    color: #1DA1F2; }
+  .social a.linkedin svg {
+    fill: #0A66C2; }
+  .social a.linkedin span {
+    color: #0A66C2; }
+  .social a.github svg {
+    fill: #181717; }
+  .social a.github span {
+    color: #181717; }
 
 .page_blog {
   padding: 2rem 15px;
@@ -7671,7 +7700,7 @@ footer {
     padding-bottom: 0; }
 
 .page_home-intro {
-  padding: 2rem 2rem;
+  padding: 2rem;
   height: 550px;
   display: flex;
   flex-direction: column;
@@ -7680,7 +7709,6 @@ footer {
   background-color: lightgray; }
   @media (max-width: 1100px) {
     .page_home-intro {
-      padding: 2rem 2rem;
       height: 100%; } }
   .page_home-intro h1, .page_home-intro .h1 {
     font-size: 3rem;
@@ -7704,6 +7732,16 @@ footer {
     padding-bottom: 1rem;
     font-size: 1.15rem;
     letter-spacing: .1rem; }
+    .page_home-intro--tagline a {
+      font-weight: 900 !important;
+      color: teal !important;
+      text-decoration: none !important;
+      transition: .25s all ease-in-out;
+      border-bottom: 2px solid transparent !important; }
+      .page_home-intro--tagline a:hover {
+        color: gray !important;
+        text-decoration: none;
+        border-bottom: 2px solid gray !important; }
   .page_home-intro--quote {
     font-weight: 500;
     font-size: 1.1rem; }
@@ -7742,37 +7780,77 @@ footer {
     order: 1;
     text-align: center; } }
 
-.page_contact-intro {
-  padding: 2rem 50% 2rem 2rem;
+.page_contact-section {
   height: 100%;
-  min-height: 78vh;
+  min-height: 85vh;
   display: flex;
-  flex-direction: column;
-  align-items: left;
-  text-align: left;
-  background-color: lightgray; }
-  @media (max-width: 1100px) {
-    .page_contact-intro {
-      padding: 2rem 2rem;
-      height: 100%; } }
-  .page_contact-intro h1, .page_contact-intro .h1 {
-    font-size: 3rem;
-    color: teal;
-    margin-bottom: 0; }
-    @media (max-width: 735px) {
-      .page_contact-intro h1, .page_contact-intro .h1 {
-        margin: 0;
-        width: 100%; } }
-  @media (max-width: 735px) {
-    .page_contact-intro h2, .page_contact-intro .h2 {
-      text-align: justify; } }
-  .page_contact-intro p {
-    font-weight: 600;
-    font-size: 18px; }
+  flex-direction: column; }
+  .page_contact-section--intro {
+    padding: 2rem;
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: left;
+    text-align: left;
+    background-color: lightgray; }
+    @media (max-width: 1100px) {
+      .page_contact-section--intro {
+        height: 100%; } }
+    .page_contact-section--intro-tagline {
+      width: 60%; }
+      @media (max-width: 1100px) {
+        .page_contact-section--intro-tagline {
+          width: 100%; } }
+      .page_contact-section--intro-tagline p {
+        padding-bottom: 1rem;
+        font-size: 1.15rem;
+        letter-spacing: .1rem; }
+      .page_contact-section--intro-tagline h1, .page_contact-section--intro-tagline .h1 {
+        font-size: 3rem;
+        color: teal;
+        margin-bottom: 0; }
+        @media (max-width: 735px) {
+          .page_contact-section--intro-tagline h1, .page_contact-section--intro-tagline .h1 {
+            margin: 0;
+            width: 100%; } }
+        .page_contact-section--intro-tagline h1 span, .page_contact-section--intro-tagline .h1 span {
+          color: #303030;
+          font-family: 'Open Sans', sans-serif; }
+      .page_contact-section--intro-tagline a {
+        font-weight: 900 !important;
+        color: teal !important;
+        text-decoration: none !important;
+        transition: .25s all ease-in-out;
+        border-bottom: 2px solid transparent !important; }
+        .page_contact-section--intro-tagline a:hover {
+          color: gray !important;
+          text-decoration: none;
+          border-bottom: 2px solid gray !important; }
+  .page_contact-section--body {
+    padding: 2rem;
+    display: flex;
+    justify-content: center;
+    margin-top: auto; }
+    .page_contact-section--body .social {
+      padding-bottom: 2rem; }
+      .page_contact-section--body .social a {
+        font-weight: 900 !important;
+        text-decoration: none !important; }
+        .page_contact-section--body .social a span {
+          padding-top: .5rem; }
+        .page_contact-section--body .social a:hover {
+          text-decoration: none; }
+          .page_contact-section--body .social a:hover svg {
+            fill: gray !important; }
+          .page_contact-section--body .social a:hover span {
+            color: gray !important; }
+      .page_contact-section--body .social a, .page_contact-section--body .social a svg, .page_contact-section--body .social a span {
+        transition: .25s all ease-in-out;
+        text-align: center; }
 
 .page_contact-form {
-  display: block;
-  padding: 2rem 0; }
+  display: block; }
   .page_contact-form--group {
     padding-bottom: 1rem; }
     .page_contact-form--group label {
@@ -7790,13 +7868,13 @@ footer {
       padding: 10px;
       box-sizing: border-box; }
     .page_contact-form--group input, .page_contact-form--group textarea {
-      border: 2px solid teal;
       background: rgba(0, 128, 128, 0.2);
       border-radius: 5px; }
     .page_contact-form--group input, .page_contact-form--group input::placeholder, .page_contact-form--group textarea, .page_contact-form--group textarea::placeholder {
       height: 30px;
       font-family: 'Open Sans', sans-serif;
-      color: #303030; }
+      color: #303030;
+      font-weight: 400; }
     .page_contact-form--group textarea {
       height: 200px;
       margin-bottom: 1rem; }
