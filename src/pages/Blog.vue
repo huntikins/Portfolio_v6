@@ -28,7 +28,7 @@ import PostItem from "@/components/PostItem";
 export default {
     metaInfo() {
       return {
-        title: this.$page.meta.siteName,
+        title: 'Blog',
         description: this.$page.meta.siteDescription,
         keywords: 'web development, javascript, html, vue, react, front-end, back-end, full-stack, coding',
         openGraph: {

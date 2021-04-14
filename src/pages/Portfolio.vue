@@ -69,6 +69,7 @@ query {
           id
           title
           preview_text
+          article
           cover_photo {
             url
             size

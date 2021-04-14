@@ -58,7 +58,7 @@ import PortfolioItem from "@/components/PortfolioItem";
 export default {
     metaInfo() {
       return {
-        title: this.$page.meta.siteName,
+        title: `Full Stack Web Developer`,
         description: this.$page.meta.siteDescription,
         keywords: 'web development, javascript, html, vue, react, front-end, back-end, full-stack, coding',
         openGraph: {

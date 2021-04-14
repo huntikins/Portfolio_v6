@@ -65,7 +65,7 @@ import axios from "axios";
 export default {
     metaInfo() {
       return {
-        title: this.$page.meta.siteName,
+        title: 'Contact',
         description: this.$page.meta.siteDescription,
         keywords: 'web development, javascript, html, vue, react, front-end, back-end, full-stack, coding',
         openGraph: {
