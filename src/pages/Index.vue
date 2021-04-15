@@ -5,7 +5,7 @@
         <h1>Hunter Trammell<br><span>Web Developer, Tutor & Author</span></h1>
         <div class="page_home-intro--body">
           <p class="page_home-intro--tagline">As you may have deduced from the title, my name is Hunter Trammell and I am a Full Stack Web Developer from Kansas City. Web Development is my passion and I love to share that passion with others whether it is through casual conversation or by way of instruction. I am constantly learning and improving my skills as a developer. If you'd like to learn more about me and my work, click the button below, otherwise keep scrolling to see some of my recent projects & articles.</p>
-          <g-link to="/about/" class="btn">About Me</g-link>
+          <g-link to="/contact/" class="btn">Say Hello</g-link>
         </div>
       </section>
       <section class="page_home-blog">

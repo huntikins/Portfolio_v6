@@ -4,7 +4,7 @@
       <section class="page_home-intro d-flex justify-content-center align-items-start flex-column">
         <h1>Web Development<br><span>Tutorials, Tips, and Tidbits</span></h1>
         <div class="page_home-intro--body">
-          <p class="page_home-intro--quote"><em>"The largest room in the world is the room for improvement."</em></p>
+          <p class="page_home-intro--quote"><em>"The largest room in the world is the room for improvement." - Unknown</em></p>
           <p class="page_home-intro--tagline">While I can't say where that quote originated, I can say as a Full Stack Web Developer I am constantly reminded of this ever expansive room for improvement. There are always new technologies to learn, a javascript method to discover, or even development tools to take advantage of. In this infinite room, how does one quench that endless thirst for knowledge? We drink until we're full &mdash; so let's crack open a cold one and dive into some Web Development concepts.</p>
           <a href="#recent-dev-articles" class="btn">DIVE IN</a>
         </div>

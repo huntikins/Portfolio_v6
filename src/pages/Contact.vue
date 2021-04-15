@@ -4,7 +4,7 @@
       <section class="page_contact-section">
         <div class="page_contact-section--intro">
           <div class="page_contact-section--intro-tagline">
-             <h1>Contact</h1>
+            <h1>Contact Me</h1>
             <p>Have a question or wan't to chat? Send me a message and I'll try to get back to you as soon as I can. Alternativley, feel free to reach out via <a href="https://twitter.com/trammellwebdev" target="_blank" rel="noopener">Twitter</a> or <a href="https://www.linkedin.com/in/huntertrammell" target="_blank" rel="noopener">LinkedIn</a>!</p>
           </div>
         </div>

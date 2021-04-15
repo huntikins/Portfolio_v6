@@ -10,7 +10,7 @@
             <ul class="header_nav navbar-nav me-auto mb-2 mb-lg-0">
               <li class="header_nav-item"><g-link to="/blog/" aria-current="page">Blog</g-link></li>
               <li class="header_nav-item"><g-link to="/portfolio/" aria-current="page">Portfolio</g-link></li>
-              <li class="header_nav-item"><g-link to="/about/" aria-current="page">About</g-link></li>
+              <!-- <li class="header_nav-item"><g-link to="/about/" aria-current="page">About</g-link></li> -->
               <li class="header_nav-item"><g-link to="/contact/" aria-current="page">Contact</g-link></li>
             </ul>
           </div>
