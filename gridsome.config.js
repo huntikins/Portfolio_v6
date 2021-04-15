@@ -5,9 +5,10 @@
 // To restart press CTRL + C in terminal and run `gridsome develop`
 
 module.exports = {
-  siteName: 'Hunter Trammell - Full Stack Web Developer',
+  siteName: 'Hunter Trammell',
   siteUrl: 'https://huntertrammell.dev',
   siteDescription: "I make websites happen and live near Kansas City",
+  titleTemplate: 'Hunter Trammell | %s',
   metadata: {
     twitter: '@trammellwebdev',
     author: 'Hunter Trammell',
@@ -32,6 +33,7 @@ module.exports = {
     }
   ],
   templates: {
-    Post: '/blog/:title'
+    Post: '/blog/:title',
+    Portfolio: '/portfolio/:title'
   }
 }

@@ -1,0 +1,90 @@
+.portfolio_preview {
+  @media(max-width:767px){
+    margin-bottom: 2rem;
+  }
+    a {
+      text-decoration: none;
+    }
+    &-card {
+      margin: 0 auto;
+      border-radius: 15px;
+      transition: all .2s ease;
+      background-color: whitesmoke;
+      &:hover {
+        transform: scale(1.05);
+        background-color: white;
+        box-shadow: 25px 15px 0 0 rgba($color: teal, $alpha: .4);
+        img {
+            opacity: 1;
+        }
+      }
+      &-img {
+        border-radius: 15px 15px 0 0;
+      }
+      .github-corner:hover .octo-arm{
+        animation:octocat-wave 560ms ease-in-out
+      }
+      @keyframes octocat-wave{
+        0%,100%{transform:rotate(0)}
+        20%,60%{transform:rotate(-25deg)}
+        40%,80%{transform:rotate(10deg)}
+      }
+      @media (max-width:500px){
+        .github-corner:hover .octo-arm{
+          animation:none
+        }
+        .github-corner .octo-arm{
+          animation:octocat-wave 560ms ease-in-out
+        }
+      }
+      img {
+        max-width: 100%;
+        height: auto;
+        object-fit: cover;
+        border-radius: 15px 15px 0 0 ;
+        opacity: .7;
+        transition: all .2s ease;
+        &:hover {
+          opacity: 1;
+        }
+      }
+      &--body {
+        padding: .5rem 1rem 2rem;
+        h3 {
+          font-size: 1.5rem;
+          line-height: 1.25;
+          color: teal !important;
+          margin-bottom: 0;
+          padding-bottom: 0;
+          a {
+            color: teal;
+            text-decoration: none;
+          }
+        }
+        small {
+          color: #303030;
+          a {
+            color: teal;
+            text-decoration: none;
+            font-weight: 600;
+          }
+        }
+        p {
+          margin-bottom: 2rem;
+          color: #303030;
+        }
+        ul {
+          list-style-type: none;
+          margin: 0;
+          padding: .25rem 0 .5rem;
+          li {
+            display: inline;
+            padding-right: .25rem;
+            a {
+              color: white;
+            }
+          }
+        }
+      }
+    }
+  }

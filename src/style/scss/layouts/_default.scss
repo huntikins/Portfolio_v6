@@ -1,5 +1,5 @@
 main {
-    padding-top: 9vh;
+    padding-top: 10vh;
   }
   body, html {
     font-family: 'Open Sans', sans-serif;
@@ -17,12 +17,64 @@ main {
     background-color: teal;
     padding: 2rem;
     text-align: center;
+    height: 5vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     small {
       color: white;
       a {
         color: white;
         font-weight: 900;
         text-decoration: none;
+      }
+    }
+  }
+  .social {
+    a {
+      padding: 1rem;
+      svg {
+        height: 30px;
+      }
+      &.facebook {
+        svg {
+          fill: #1877F2;
+        }
+        span {
+          color: #1877F2;
+        }
+      }
+      &.reddit {
+        svg {
+          fill: #FF4500;
+        }
+        span {
+          color: #FF4500;
+        }
+      }
+      &.twitter {
+        svg {
+          fill: #1DA1F2;
+        }
+        span {
+          color: #1DA1F2;
+        }
+      }
+      &.linkedin {
+        svg {
+          fill: #0A66C2;
+        }
+        span {
+          color: #0A66C2;
+        }
+      }
+      &.github {
+        svg {
+          fill: #181717;
+        }
+        span {
+          color: #181717;
+        }
       }
     }
   }

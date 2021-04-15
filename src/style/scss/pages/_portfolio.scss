@@ -1,0 +1,18 @@
+.page_home{
+    &-portfolio{
+        &--posts{
+            @media(max-width: 992px){
+                order: 2;
+            }
+            &-cta{
+                padding-bottom: 2rem;
+            }
+        }
+        &--text {
+            @media(max-width: 992px){
+                order: 1;
+                text-align: center;
+            }
+        }
+    }
+}

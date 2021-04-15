@@ -1,3 +1,5 @@
+// vendor
+@import "vendor/bootstrap/bootstrap.scss";
 //abstracts
 @import "abstracts/_functions";
 @import "abstracts/_mixins";
@@ -12,6 +14,7 @@
 //components
 @import "components/header";
 @import "components/postitem";
+@import "components/portfolioitem";
 //layout
 @import "layouts/default";
 //pages
