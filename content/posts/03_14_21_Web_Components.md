@@ -1,6 +1,6 @@
 ---
 title: "A Brief Introduction To Web Components"
-description: "Intro Needs to be written"
+description: "Interested in Web Components but not sure where to start? Let's take a quick look at some of the core concepts so you can hit the ground running with your very own Web Component"
 date: 2021-03-14T03:16:00Z
 image: 'https://images.unsplash.com/photo-1589149098258-3e9102cd63d3?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1837&q=80'
 readmore: "Read More"
