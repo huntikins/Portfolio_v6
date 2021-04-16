@@ -10,7 +10,7 @@
         </div>
       </section>
       <section class="page_home-blog">
-        <h2 id="projects" class="page_home-blog--header pt-4">Recent Projects</h2>
+        <h2 id="projects" class="page_home-blog--header pt-4">Projects</h2>
         <div class="page_home-blog--posts">
             <div class="continer-fluid">
                 <div class="row w-100 row-cols-1 row-cols-md-3 row-cols-sm-2 g-4 mx-auto" data-masonry='{"percentPosition": true }'>
