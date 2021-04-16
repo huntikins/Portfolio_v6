@@ -15,7 +15,7 @@ A few years ago I attended a local [Drupal](https://www.drupal.org/) meetup and 
 
 ## Web Components
 
-In a nutshell, Web Components are reusable custom HTML tags that live in their own little bubble - the [Shadow DOM](https://developer.mozilla.org/en-US/docs/Web/Web_Components/Using_shadow_DOM). Because these components live in their own DOM they aren’t targetable via  the Light DOM (Light DOM is used when talking about the Shadow DOM so there is a differentiation between he two DOM’s). CSS from the parent will not be usable by the web component so you can have a completely encapsulated element within your DOM. I would like to note that while your Web Component won’t have access to the styles of the parent it can still inherit styles specified via the body or html tag. Web Components are [supported by every major browser](https://caniuse.com/custom-elementsv1) aside from IE (what’s new 🤷🏼‍♂️) making them a powerful tool to add to your knowledge base. In this Article we will explore some possible use cases for Web Components, and the methods available to us.
+In a nutshell, Web Components are reusable custom HTML tags that live in their own little bubble - the [Shadow DOM](https://developer.mozilla.org/en-US/docs/Web/Web_Components/Using_shadow_DOM). Because these components live in their own DOM they aren’t targetable via  the Light DOM (Light DOM is used when talking about the Shadow DOM so there is a differentiation between the two DOM’s). CSS from the parent will not be usable by the web component so you can have a completely encapsulated element within your DOM. I would like to note that while your Web Component won’t have access to the styles of the parent it can still inherit styles specified via the body or html tag. Web Components are [supported by every major browser](https://caniuse.com/custom-elementsv1) aside from IE (what’s new 🤷🏼‍♂️) making them a powerful tool to add to your knowledge base. In this Article we will explore some possible use cases for Web Components, and the methods available to us.
 
 ## When To Leverage Web Components
 
@@ -25,7 +25,7 @@ When considering using a Web Component, here are a couple use cases:
 
 ## How To Create A Web Component
 
-To create a Web Component we first need to create a class that defines our components functionality and initiates the Shadow DOM. Then we can define a template to hold our HTML if needed and lastly we need to register our component with the Light DOM so that we can load it onto the page using a custom HTML tag name. Let’s take a look at a barebones Web Component before we start our build to better understand how it is constructed and what methods are available to us - though not all are required or needed in every Component.
+To create a Web Component we first need to create a class that defines our components functionality and initiates the Shadow DOM. Then we can define a template to hold our HTML if needed and lastly we need to register our component with the Light DOM so that we can load it onto the page using a custom HTML tag name. Let’s take a look at a barebones Web Component to better understand how it is constructed and what methods are available to us - though not all are required or needed in every Component.
 
 [GitHub Gist](https://gist.github.com/huntertrammell/0be202a282c111f0a416870aa82b536b)
 
