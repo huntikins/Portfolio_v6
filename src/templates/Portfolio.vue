@@ -7,7 +7,7 @@
         <li v-for="stack in $page.portfolio.staxonomies" :key="stack.id"  style="padding-right:.25rem;display:inline;"><span class="badge rounded-pill bg-success"><a :href="stack.url" target="_blank" rel="noopener" class="text-white text-decoration-none">{{stack.title}}</a></span></li>
       </ul>
       <hr>
-      <article v-html="$page.portfolio.article"/>
+      <vue-simple-markdown :source="$page.portfolio.article"></vue-simple-markdown>
       <div class="post_page-footer">
         <p>Share this project with other developers</p>
         <div class="post_page-footer--social">
