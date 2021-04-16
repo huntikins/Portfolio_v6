@@ -11,7 +11,7 @@
           <small v-if="portfolio.built_for.length"><span>Built For</span>&nbsp;<span><a :href="portfolio.built_for[0].url" target="_blank" rel="noopener">{{portfolio.built_for[0].title}}</a></span></small>
           <p class="my-2">{{portfolio.preview_text}}</p>
           <div class="mt-auto">
-              <a v-if="portfolio.url" class="btn-teal mr-auto text-center mt-5 w-100 d-block" :href="portfolio.url" target="_blank" rel="noopener">Visit Site</a>
+              <a v-if="portfolio.url" class="btn-teal mr-auto text-center mt-5 w-100 d-block" :href="portfolio.url" target="_blank" rel="noopener">{{ portfolio.built_for.length ? siteMsg(portfolio.built_for[0].title) : 'View Demo' }}</a>
               <g-link class="btn-teal mr-auto text-center mt-2 w-100 d-block" :to="portfolio.path">Read More</g-link>
           </div>
         </div>
@@ -26,6 +26,16 @@ export default {
     date() {
       return this.post.date.substring(0, this.post.date.length - 4);
     }
+  },
+  methods: {
+    siteMsg(build) {
+        if(build == 'School' || build == 'undefined'){
+          return "View Demo"
+        }
+        else {
+          return "View Site"
+        }
+      }
   }
 };
 </script>
