@@ -13,7 +13,7 @@
       &:hover {
         transform: scale(1.05);
         background-color: white;
-        box-shadow: 25px 15px 0 0 rgba($color: teal, $alpha: .4);
+        box-shadow: 25px 15px 0 0 rgba($color: $teal, $alpha: .4);
         img {
             opacity: 1;
         }
@@ -53,25 +53,25 @@
         h3 {
           font-size: 1.5rem;
           line-height: 1.25;
-          color: teal !important;
+          color: $teal !important;
           margin-bottom: 0;
           padding-bottom: 0;
           a {
-            color: teal;
+            color: $teal;
             text-decoration: none;
           }
         }
         small {
-          color: #303030;
+          color: $black;
           a {
-            color: teal;
+            color: $teal;
             text-decoration: none;
             font-weight: 600;
           }
         }
         p {
           margin-bottom: 2rem;
-          color: #303030;
+          color: $black;
         }
         ul {
           list-style-type: none;

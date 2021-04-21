@@ -2,11 +2,14 @@
     a {
       text-decoration: none;
     }
+    .card {
+      border: none;
+    }
     &-card {
       margin: 0 auto;
       border-radius: 15px;
       transition: all .2s ease;
-      background-color: lightgray;
+      background-color: $gray;
       @media(max-width: 735px){
         margin: 0 auto;
         width: 100%;
@@ -14,7 +17,7 @@
       &:hover {
         transform: scale(1.05);
         background-color: white;
-        box-shadow: 25px 15px 0 0 rgba($color: teal, $alpha: .4);
+        box-shadow: 25px 15px 0 0 rgba($color: $teal, $alpha: .4);
       }
       img {
         max-width: 100%;
@@ -33,17 +36,17 @@
           font-size: 1.5rem;
           line-height: 1.25;
           a {
-            color: teal;
+            color: $teal;
             text-decoration: none;
           }
           margin-bottom: .75rem;
         }
         small {
-          color: #303030;
+          color: $black;
         }
         p {
           margin-bottom: 2rem;
-          color: #303030;
+          color: $black;
         }
       }
     }
