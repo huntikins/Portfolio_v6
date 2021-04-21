@@ -15,7 +15,7 @@
       text-transform: capitalize;
       text-align: center;
       margin-bottom: 0;
-      color: teal;
+      color: $teal;
     }
     small {
       display: block;
@@ -31,10 +31,10 @@
    blockquote {
      padding-left: 1rem;
      font-style: italic;
-     border-left: 4px solid teal;
+     border-left: 4px solid $teal;
      line-height: 1.20;
      font-size: 14px;
-     color: teal;
+     color: $teal;
      font-weight: 500;
      text-align: justify;
    }
@@ -42,7 +42,7 @@
        text-align: justify;
      a {
        font-weight: 900 !important;
-       color: teal !important;
+       color: $teal !important;
        text-decoration: none !important;
        transition: .25s all ease-in-out;
        border-bottom: 2px solid transparent !important;
@@ -97,8 +97,8 @@
         }
       }
      &--wyzant {
-        background: lightgray;
-        color: #303030;
+        background: $gray;
+        color: $black;
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -116,7 +116,7 @@
           margin: 0;
           font-style: normal;
           strong{
-            color: teal;
+            color: $teal;
             &:first-of-type {
               line-height: 2;
               font-size: 1.25rem;
@@ -142,7 +142,7 @@
           span {
             font-weight: 100;
             font-size: 50px;
-            background-color: teal;
+            background-color: $teal;
             color: transparent;
             text-shadow: 0px 0px .5px rgba(255,255,255,0.2);
             background-clip: text;
