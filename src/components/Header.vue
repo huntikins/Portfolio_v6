@@ -7,7 +7,7 @@
             <span class="navbar-toggler-icon"></span>
           </button>
           <div class="collapse navbar-collapse" id="navbarMenu">
-            <ul class="navbar-nav ml-auto">
+            <ul class="navbar-nav ms-auto">
               <li class="nav-item"><g-link class="nav-link" to="/blog/" aria-current="page">Blog</g-link></li>
               <li class="nav-item"><g-link class="nav-link" to="/portfolio/" aria-current="page">Portfolio</g-link></li>
               <!-- <li class="nav-item"><g-link class="nav-link" to="/about/" aria-current="page">About</g-link></li> -->
