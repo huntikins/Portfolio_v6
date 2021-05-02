@@ -1,6 +1,6 @@
 ---
 title: "A JavaScript Honeymoon"
-description: "Captain's Log, Stardate 98931.76. I have recently decided to undertake the #JavaScript30 coding challenge. During the next 30 days I will be committing myself to spend a little more time working with JavaScript by building some really cool shit."
+description: "Captain's Log, Stardate 98931.76. I have recently decided to undertake the #JavaScript30 coding challenge. During the next 30 days I will be committing myself to spend a little more time working with JavaScript by building some really cool shit. I'll be updating this post with my progress so be sure to check back for updates!"
 date: 2021-04-01T22:30:00Z
 image: 'https://javascript30.com/images/JS3-social-share.png'
 readmore: "Join Me"
@@ -10,7 +10,7 @@ featured: true
 ---
 ![](https://javascript30.com/images/JS3-social-share.png)
 
-Captain's Log, Stardate 98931.76. I have recently decided to undertake the [#JavaScript30](https://JavaScript30.com) coding challenge. During the next 30 days I will be committing myself to spend a little more time working with JavaScript by building some really cool shit.
+Captain's Log, Stardate 98931.76. I have recently decided to undertake the [#JavaScript30](https://JavaScript30.com) coding challenge. During the next 30 days I will be committing myself to spend a little more time working with JavaScript by building some really cool shit. I'll be updating this post with my progress so be sure to check back for updates!
 
 Take the challenge at [JavaScript30.com](https://JavaScript30.com), be sure to checkout more of [Wes Bos' courses](https://wesbos.com/courses) and show your support!
 
