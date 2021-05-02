@@ -7,7 +7,7 @@ readmore: "Let's Begin!"
 tags: ['React', 'Component', 'Modal']
 author: 'Hunter Trammell'
 wyzant: 'React'
-featured: true
+featured: false
 ---
  
 > Our Hero scrolls casually through a webpage when suddenly everything goes dark! Feverishly, they spin the scroll wheel on their mouse but it's no use, our Hero is trapped. Clicks ring through the air trying to dismiss the beast but not even the point of their cursor can penetrate the 80% opacity fog that has engulfed our Hero's webpage. Drifting closer to the center of the webpage, they discover an island brimming with text and inputs. The Hero's Heartbeat begins to slow as their gaze is affixed on the X in the top right corner, a way out of this madness. The tip of their index finger shatters their mouse as the black fog dissolves into oblivion. The modal has been slain.
