@@ -29,7 +29,7 @@ export default {
   },
   methods: {
     siteMsg(build) {
-        if(build == 'School' || build == 'undefined'){
+        if(build == 'School' || build == 'undefined' || build == '#JavaScript30'){
           return "View Demo"
         }
         else {
