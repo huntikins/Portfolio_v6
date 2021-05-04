@@ -41,3 +41,14 @@ I opted to try to build the app myself before watching the tutorial and without 
 **TIL/Thoughts**: I haven't worked with ```setInterval``` much since first learning how to code building stopwatches etc, but i'm really thankful for this exercise for giving me a reason to fiddle! Using this method to power animations is really cool and I can see it being useful in creating more complex animations, i've been wanting to experiment more with animations and am excited to utilize this more in future projects.
 
 I did a bit of refactoring as a challenge to myself. The build on this was fairly quick as it utilized a lot of the same code - that being said, I went ahead and moved the degree calculating variable and the style.transform into their own functions and used arguments to pass in the data that was unique to the different time measurements. 
+
+## Day 3: CSS Variables
+*Monday May 3rd, 2021* 
+
+![](https://github.com/huntertrammell/JavaScript30/tree/main/challenges/03%20-%20CSS%20Variables/screenshot.png)
+
+[**Source Files**](https://github.com/huntertrammell/JavaScript30/tree/main/challenges/03%20-%20CSS%20Variables)
+
+[**Live Demo**](https://huntertrammell.github.io/JavaScript30/challenges/03%20-%20CSS%20Variables/)
+
+**TIL/Thoughts**: CSS variables 😘, I always go into a project with a simple node-sass compiler and prefixer. I love using Scss to build my projects out, mainly because of variables and selector nesting. I've been aware of CSS variables but haven't quite seen a use case of my own since I already use Scss primarily, but oh boy do I hate trying to fiddle with the package.json because one of node-sass' 5 million dependencies does not support Node X.X. Using datasets to pass values into CSS variables is real cool, as with the last 2 demo's i'm very excited to fiddle with this some more. I also feel like I heard recently that nesting might be coming to CSS, if that is real i'm going to be using CSS variables a lot more!
