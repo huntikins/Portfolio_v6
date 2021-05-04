@@ -1,5 +1,5 @@
 ---
-title: "A JavaScript Honeymoon"
+title: "#JavaScript30 Challenge Review: A JavaScript Honeymoon"
 description: "Captain's Log, Stardate 98931.76. I have recently decided to undertake the #JavaScript30 coding challenge. During the next 30 days I will be committing myself to spend a little more time working with JavaScript by building some really cool shit. I'll be updating this post with my progress so be sure to check back for updates!"
 date: 2021-04-01T22:30:00Z
 image: 'https://javascript30.com/images/JS3-social-share.png'
