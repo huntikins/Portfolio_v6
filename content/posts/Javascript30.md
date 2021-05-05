@@ -52,3 +52,15 @@ I did a bit of refactoring as a challenge to myself. The build on this was fairl
 [**Live Demo**](https://huntertrammell.github.io/JavaScript30/challenges/03%20-%20CSS%20Variables/)
 
 **TIL/Thoughts**: CSS variables 😘, I always go into a project with a simple node-sass compiler and prefixer. I love using Scss to build my projects out, mainly because of variables and selector nesting. I've been aware of CSS variables but haven't quite seen a use case of my own since I already use Scss primarily, but oh boy do I hate trying to fiddle with the package.json because one of node-sass' 5 million dependencies does not support Node X.X. Using datasets to pass values into CSS variables is real cool, as with the last 2 demo's i'm very excited to fiddle with this some more. I also feel like I heard recently that nesting might be coming to CSS, if that is real i'm going to be using CSS variables a lot more!
+
+## Day 4: Array Cardio Day 1
+*Tuesday May 4th, 2021* 
+
+![](https://huntertrammell.github.io/JavaScript30/challenges/04%20-%20Array%20Cardio%20Day%201//screenshot.png)
+
+[**Source Files**](https://github.com/huntertrammell/JavaScript30/tree/main/challenges/04%20-%20Array%20Cardio%20Day%201)
+
+[**Live Demo**](https://huntertrammell.github.io/JavaScript30/challenges/04%20-%20Array%20Cardio%20Day%201/)
+
+**TIL/Thoughts**: 🏃🏼‍♂️ Loved todays session, i've been wanting to get a greater understanding of the different properties and methods available to arrays and this really helped expand on my knowledge. Honestly though *console.table* was the real superstar here, what a gorgeous data representation. My interest has for sure been peeked and am looking forward to diving deeper into the world of arrays.
+
