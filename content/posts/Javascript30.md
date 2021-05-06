@@ -1,7 +1,7 @@
 ---
 title: "#JavaScript30 Challenge Review: A JavaScript Honeymoon"
 description: "Captain's Log, Stardate 98931.76. I have recently decided to undertake the #JavaScript30 coding challenge. During the next 30 days I will be committing myself to spend a little more time working with JavaScript by building some really cool shit. I'll be updating this post with my progress so be sure to check back for updates!"
-date: 2021-04-01T22:30:00Z
+date: 2021-05-01T22:30:00Z
 image: 'https://javascript30.com/images/JS3-social-share.png'
 readmore: "Join Me"
 tags: ['JavaScript30', 'JavaScript', 'Challenge']
@@ -63,4 +63,16 @@ I did a bit of refactoring as a challenge to myself. The build on this was fairl
 [**Live Demo**](https://huntertrammell.github.io/JavaScript30/challenges/04%20-%20Array%20Cardio%20Day%201/)
 
 **TIL/Thoughts**: 🏃🏼‍♂️ Loved todays session, i've been wanting to get a greater understanding of the different properties and methods available to arrays and this really helped expand on my knowledge. Honestly though *console.table* was the real superstar here, what a gorgeous data representation. My interest has for sure been peeked and am looking forward to diving deeper into the world of arrays.
+
+## Day 5: Flex Panel Gallery
+*Tuesday May 5th, 2021* 
+
+![](https://huntertrammell.github.io/JavaScript30/challenges/05%20-%20Flex%20Panel%20Gallery/screenshot.png)
+
+[**Source Files**](https://github.com/huntertrammell/JavaScript30/tree/main/challenges/05%20-%20Flex%20Panel%20Gallery)
+
+[**Live Demo**](https://huntertrammell.github.io/JavaScript30/challenges/05%20-%20Flex%20Panel%20Gallery/)
+
+**TIL/Thoughts**: Such flex. Pretty cool app, what I really like about this is that it utilizes flex to evenly space items in any viewport without needing to worry about adding widths/breakpoints to each item. Really digging the *transitionend* property, by listening for a specific transition via *event.propertyName* we were able to chain transitions so that they would all fire at once or rely on timers to function properly. JavaScript + CSS for the win!
+
 
