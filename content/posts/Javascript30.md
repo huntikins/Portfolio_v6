@@ -17,7 +17,7 @@ Take the challenge at [JavaScript30.com](https://JavaScript30.com), be sure to c
 ## Day 1: JavaScript Drum Kit
 *Saturday May 1st, 2021* 
 
-![](https://raw.githubusercontent.com/huntertrammell/JavaScript30/main/challenges/01_-_JavaScript_Drum_Kit/screenshot.png)
+![](https://huntertrammell.github.io/JavaScript30/challenges/01_-_JavaScript_Drum_Kit/screenshot.png)
 
 [**Source Files**](https://github.com/huntertrammell/JavaScript30/tree/main/challenges/01_-_JavaScript_Drum_Kit)
 
@@ -56,7 +56,7 @@ I did a bit of refactoring as a challenge to myself. The build on this was fairl
 ## Day 4: Array Cardio Day 1
 *Tuesday May 4th, 2021* 
 
-![](https://huntertrammell.github.io/JavaScript30/challenges/04%20-%20Array%20Cardio%20Day%201//screenshot.png)
+![](https://huntertrammell.github.io/JavaScript30/challenges/04%20-%20Array%20Cardio%20Day%201/screenshot.png)
 
 [**Source Files**](https://github.com/huntertrammell/JavaScript30/tree/main/challenges/04%20-%20Array%20Cardio%20Day%201)
 
