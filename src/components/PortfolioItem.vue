@@ -8,7 +8,7 @@
           <ul>
             <li v-for="stack in portfolio.staxonomies" :key="stack.id"><span class="badge rounded-pill bg-success"><a :href="stack.url" target="_blank" rel="noopener">{{stack.title}}</a></span></li>
           </ul>
-          <small v-if="portfolio.built_for.length"><span>Built For</span>&nbsp;<span><a :href="portfolio.built_for[0].url" target="_blank" rel="noopener">{{portfolio.built_for[0].title}}</a></span></small>
+          <small v-if="portfolio.built_for.length"><span>Developed For</span>&nbsp;<span><a :href="portfolio.built_for[0].url" target="_blank" rel="noopener">{{portfolio.built_for[0].title}}</a></span></small>
           <p class="my-2">{{portfolio.preview_text}}</p>
           <div class="mt-auto">
               <a v-if="portfolio.url" class="btn-teal mr-auto text-center mt-5 w-100 d-block" :href="portfolio.url" target="_blank" rel="noopener">{{ portfolio.built_for.length ? siteMsg(portfolio.built_for[0].title) : 'View Demo' }}</a>
