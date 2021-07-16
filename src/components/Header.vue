@@ -10,7 +10,7 @@
             <ul class="navbar-nav ms-auto">
               <li class="nav-item"><g-link class="nav-link" to="/blog/" aria-current="page">Blog</g-link></li>
               <li class="nav-item"><g-link class="nav-link" to="/portfolio/" aria-current="page">Portfolio</g-link></li>
-              <!-- <li class="nav-item"><g-link class="nav-link" to="/about/" aria-current="page">About</g-link></li> -->
+              <li class="nav-item"><g-link class="nav-link" to="/about/" aria-current="page">About</g-link></li>
               <li class="nav-item"><g-link class="nav-link" to="/contact/" aria-current="page">Contact</g-link></li>
             </ul>
           </div>

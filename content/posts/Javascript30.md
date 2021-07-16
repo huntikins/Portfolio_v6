@@ -6,7 +6,7 @@ image: 'https://javascript30.com/images/JS3-social-share.png'
 readmore: "Join Me"
 tags: ['JavaScript30', 'JavaScript', 'Challenge']
 author: 'Hunter Trammell'
-featured: true
+featured: false
 ---
 ![](https://javascript30.com/images/JS3-social-share.png)
 
@@ -75,4 +75,7 @@ I did a bit of refactoring as a challenge to myself. The build on this was fairl
 
 **TIL/Thoughts**: Such flex. Pretty cool app, what I really like about this is that it utilizes flex to evenly space items in any viewport without needing to worry about adding widths/breakpoints to each item. Really digging the ```transitionend``` property, by listening for a specific transition via ```event.propertyName``` we were able to chain transitions so that they would all fire at once or rely on timers to function properly. JavaScript + CSS for the win!
 
+## Well this is awkward
+*Thursday July 15, 2021*
 
+This course was so much fun and I highly reccomend it to anyone willing to sharpen their skills. Life happens, and as such I didn't have the time to keep up with the course. Even though I didn't finish the course I learned a ton along the way and was even able to incorporate some of the things i learned into what i've been working on at work. 
