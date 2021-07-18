@@ -8,6 +8,7 @@ tags: ['Web Components', 'JavaScript', 'Custom Elements', 'Shadow DOM']
 author: 'Hunter Trammell'
 wyzant: 'Web Components'
 featured: true
+publication: 'https://blog.huntertrammell.dev/a-brief-introduction-to-web-components'
 ---
 ## Clues From The Past
 

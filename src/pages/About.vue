@@ -6,7 +6,7 @@
         <div class="page_home-intro--body">
           <p class="page_home-intro--quote"><em>"Your time is limited, so don't waste it living someone else's life. Don't be trapped by dogma – which is living with the results of other people's thinking." - Steve Jobs</em></p>
           <p class="page_home-intro--tagline">I've wanted to be many things in life: Writer, Tattoo Artist, Restauranteur, Architect, and loads more I can't recall. I frequently get inspired and think to myself 'my gosh, this is what I've been searching for, this is what I was born to do' and so as any knowledge seeker would I turned to papa Udemy and bought a course. At this point, if you're thinking 'oh, what a gift this man is. truly remarkable that he can change his specialty at the drop of a dime', you've probably never purchased a course from Udemy before. A few of my inspirations made it to light, but my most important and final career inspiration being a Developer.</p>
-          <g-link to="/blog/that-one-time-i-grew-up-and-became-a-web-developer/" class="btn">Get To Know Me</g-link>
+          <a href="https://blog.huntertrammell.dev/that-one-time-i-grew-up-and-became-a-web-developer" target="_blank" rel="noreferrer" class="btn">Get To Know Me</a>
         </div>
       </section>
       <section class="px-4 bio_career">
