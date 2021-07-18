@@ -21,7 +21,8 @@
     "axios": "^0.21.1",
     "gridsome": "^0.7.0",
     "gridsome-plugin-seo": "^1.0.1",
-    "vue-simple-markdown": "^1.1.4"
+    "vue-simple-markdown": "^1.1.4",
+    "gridsome-plugin-netlify-redirects": "^1.0.0"
   },
   "devDependencies": {
     "autoprefixer": "^9.5.1",
