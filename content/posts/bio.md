@@ -2,13 +2,13 @@
 title: "That one time I grew up and became a Web Developer"
 description: "I've wanted to be many things in life: Writer, Tattoo Artist, Restauranteur, Architect, and loads more I can't recall. I frequently get inspired and think to myself 'my gosh, this is what I've been searching for, this is what I was born to do' and so as any knowledge seeker would I turned to papa Udemy and bought a course. At this point, if you're thinking 'oh, what a gift this man is. truly remarkable that he can change his specialty at the drop of a dime', you've probably never purchased a course from Udemy before. A few of my inspirations made it to light, but my most important and final career inspiration being a Developer."
 date: 2021-07-15T22:30:00Z
-image: 'https://images.unsplash.com/photo-1463693396721-8ca0cfa2b3b5?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80'
+image: 'https://strapifileserver.s3.us-east-2.amazonaws.com/kalen_emsley_mg_J_Skg_Io_JI_unsplash_06c8113c5c.jpg'
 readmore: "About Me"
 tags: ['Bio', 'About Me', 'Developer Origin']
 author: 'Hunter Trammell'
 featured: true
 ---
-![Hiker overlooking a mountain](https://images.unsplash.com/photo-1463693396721-8ca0cfa2b3b5?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80)
+![Hiker overlooking a mountain](https://strapifileserver.s3.us-east-2.amazonaws.com/kalen_emsley_mg_J_Skg_Io_JI_unsplash_06c8113c5c.jpg)
 
 I've wanted to be many things in life: Writer, Tattoo Artist, Restauranteur, Architect, and loads more I can't recall. I frequently get inspired and think to myself "my gosh, this is what I've been searching for, this is what I was born to do" and so as any knowledge seeker would I turned to papa Udemy and bought a course. At this point, if you're thinking "oh, what a gift this man is. truly remarkable that he can change his specialty at the drop of a dime", you've probably never purchased a course from Udemy before. Hunter Trammell: owner of a lot of Udemy courses - does not guarantee that I've finished all of them. A few of my inspirations made it to light, I wrote 3 novels: 2 published, one later unpublished because it was smut, then a 3rd that rests comfortably in a hard drive at the bottom of my "computer bin", and my most important and final career inspiration being a Developer.
 

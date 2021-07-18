@@ -9,62 +9,50 @@
           <g-link to="/blog/that-one-time-i-grew-up-and-became-a-web-developer/" class="btn">Get To Know Me</g-link>
         </div>
       </section>
-      <section class="page_home-blog">
-        <h2 class="page_home-blog--header pt-4">Currents</h2>
-        <div class="row">
-          <div class="col-lg-4 col-md-12">
-            <div class="text-left d-flex justify-content-center align-items-center h-100">
-              <div class="page_home-portfolio--posts-cta text-right pt-4" style="text-align:right;">
-                <h3>It's A Me!</h3>
-                <p class="my-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus, soluta similique voluptatibus, culpa facilis, odio delectus voluptatem ad molestiae a perferendis possimus incidunt? Maxime, dolorem. Labore, ducimus explicabo. Ipsa, natus!</p>
+      <section class="px-4 bio_career">
+        <div class="row my-5">
+          <div class="col-lg-6 col-md-12 pe-4">
+            <div class="text-left d-flex justify-content-end align-items-start h-100">
+              <div class="page_home-portfolio--posts-cta pt-4">
+                <h3 class="text-right">Employment History</h3>
+                <p class="mt-4 text-right"><strong>Web Developer</strong> @ <a href="https://createfervor.com" target="_blank" rel="noreferrer">Fervor</a> | <strong>Oct 2020</strong>&nbsp;-&nbsp;<strong>Present</strong></p>
+                <p class="text-right"><strong>Web Developer</strong> @ <a href="https://kclibrary.org" target="_blank" rel="noreferrer">KC Public Library</a> | <strong>Oct 2019</strong>&nbsp;-&nbsp;<strong>Oct 2020</strong></p>
+                <p class="text-right"><strong>Level 2 Analyst</strong> @ <a href="https://amctheatres.com" target="_blank" rel="noreferrer">AMC Theatres</a> | <strong>Jun 2019</strong>&nbsp;-&nbsp;<strong>Oct 2019</strong></p>
+                <p class="text-right"><strong>Level 1 Analyst</strong> @ <a href="https://amctheatres.com" target="_blank" rel="noreferrer">AMC Theatres</a> | <strong>Feb 2017</strong>&nbsp;-&nbsp;<strong>Jun 2019</strong></p>
+                <p class="text-right"><strong>Hourly Manager</strong> @ <a href="https://www.amctheatres.com/movie-theatres/kansas-city/amc-dine-in-studio-28" target="_blank" rel="noreferrer">AMC Studio 30</a> | <strong>Oct 2014</strong>&nbsp;-&nbsp;<strong>Feb 2017</strong></p>
+                <p class="text-right"><strong>Supervisor</strong> @ <a href="https://www.amctheatres.com/movie-theatres/kansas-city/amc-dine-in-studio-28" target="_blank" rel="noreferrer">AMC Studio 30</a> | <strong>Aug 2013</strong>&nbsp;-&nbsp;<strong>Oct 2014</strong></p>
+                <p class="text-right mb-0"><strong>Film Crew</strong> @ <a href="https://www.amctheatres.com/movie-theatres/kansas-city/amc-dine-in-studio-28" target="_blank" rel="noreferrer">AMC Studio 30</a> | <strong>Sep 2011</strong>&nbsp;-&nbsp;<strong>Aug 2013</strong></p>
               </div>
             </div>
           </div>
-          <div class="page_home-blog--posts col-lg-8 col-md-12">
-            <div class="row w-100 row-cols-1 row-cols-md-2 g-4 mx-auto">
-              
+          <div class="col-lg-6 col-md-12 ps-4">
+            <div class="text-left d-flex justify-content-start align-items-start h-100">
+              <div class="page_home-portfolio--posts-cta pt-4">
+                <h3>What I Like To Work With</h3>
+                <ul class="mt-4">
+                  <li>JavaScript</li>
+                  <li>HTML</li>
+                  <li>CSS/SCSS</li>
+                  <li>PHP/WordPress</li>
+                  <li>JAMStack</li>
+                  <li>Vue</li>
+                  <li>React</li>
+                  <li>Git</li>
+                  <li>Netlify</li>
+                  <li>Gridsome</li>
+                  <li>Bootstrap</li>
+                  <li>Vuetify</li>
+                  <li>Web Components</li>
+                  <li>GraphQL</li>
+                  <li>Strapi</li>
+                  <li>AWS S3</li>
+                  <li>Documentation</li>
+                </ul>
+              </div>
             </div>
           </div>
         </div>
-      </section>
-      <section class="page_home-portfolio">
-        <div class="container-fluid">
-          <h2 id="recent-dev-articles" class="page_home-portfolio--header pt-4">What I Use</h2>
-          <div class="row">
-            <div class="page_home-portfolio--posts col-lg-8 col-md-12">
-              <div class="row w-100 row-cols-1 row-cols-md-2 g-4 mx-auto">
-                
-              </div>
-            </div>
-            <div class="page_home-portfolio--text col-lg-4 col-md-12">
-              <div class="text-left d-flex justify-content-center align-items-center h-100">
-                <div class="page_home-portfolio--posts-cta pt-4">
-                  <h3>See What I've Been Working On</h3>
-                  <p class="my-4">I am thankful that my work can persist past creation and have collected it here for you. Whereas a chef’s creation may only live until the dining guest completes their meal, my work lives as long as the hosting is paid for (or longer if we’re talking GitHub).</p>
-                  
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      <section class="page_home-blog">
-        <h2 class="page_home-blog--header pt-4">Fun Facts</h2>
-        <div class="row">
-          <div class="col-lg-4 col-md-12">
-            <div class="text-left d-flex justify-content-center align-items-center h-100">
-              <div class="page_home-portfolio--posts-cta text-right pt-4" style="text-align:right;">
-                <h3>It's A Me!</h3>
-                <p class="my-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus, soluta similique voluptatibus, culpa facilis, odio delectus voluptatem ad molestiae a perferendis possimus incidunt? Maxime, dolorem. Labore, ducimus explicabo. Ipsa, natus!</p>
-              </div>
-            </div>
-          </div>
-          <div class="page_home-blog--posts col-lg-8 col-md-12">
-            <div class="row w-100 row-cols-1 row-cols-md-2 g-4 mx-auto">
-              
-            </div>
-          </div>
-        </div>
+        <p class="bio_connect text-center pb-4">Connect with me on <a href="https://linkedin.com/in/huntertrammell" target="_blank" rel="noreferrer">Linked In</a> & <a href="https://twitter.com/trammellwebdev" target="_blank" rel="noreferrer">Twitter</a>!</p>
       </section>
     </div>
   </Layout>

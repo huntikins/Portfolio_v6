@@ -7467,16 +7467,34 @@ textarea.form-control-lg {
   text-decoration: none;
   font-weight: 600; }
 
+.text-right {
+  text-align: right; }
+
 header {
   width: 100%;
   border-bottom: 4px solid #e0e0e0; }
   header .navbar {
     padding: 1rem 2rem; }
+    header .navbar li {
+      display: flex;
+      align-items: center; }
     header .navbar a {
       text-decoration: none;
       text-transform: uppercase;
       letter-spacing: .15rem;
       font-weight: 900; }
+      header .navbar a svg {
+        height: 18px;
+        margin-bottom: 4px;
+        fill: rgba(0, 0, 0, 0.55);
+        vertical-align: middle; }
+        header .navbar a svg:first-of-type {
+          margin: 0 .75rem 4px .5rem; }
+        header .navbar a svg:hover {
+          fill: #009a9a !important; }
+        @media (max-width: 992px) {
+          header .navbar a svg:first-of-type {
+            margin: .75rem 0 .75rem 0; } }
       @media (max-width: 470px) {
         header .navbar a {
           font-size: 14px !important; } }
@@ -7849,7 +7867,8 @@ footer {
     .page_contact-form--group input, .page_contact-form--group textarea {
       background: #e0e0e0;
       border-radius: 5px;
-      color: #009a9a; }
+      color: #009a9a;
+      border: solid #009a9a 2px; }
     .page_contact-form--group input, .page_contact-form--group input::placeholder, .page_contact-form--group textarea, .page_contact-form--group textarea::placeholder {
       height: 30px;
       font-family: 'Open Sans', sans-serif;
@@ -7858,6 +7877,34 @@ footer {
     .page_contact-form--group textarea {
       height: 200px;
       margin-bottom: 1rem; }
+
+.bio_career {
+  font-weight: 600; }
+  .bio_career a {
+    text-decoration: none;
+    color: #009a9a;
+    font-weight: bolder; }
+    .bio_career a:hover {
+      text-decoration: underline; }
+  .bio_career strong, .bio_career li {
+    color: #009a9a;
+    font-weight: bolder; }
+  .bio_career ul {
+    column-count: 2; }
+  .bio_career .ps-4 {
+    border-left: solid #009a9a 2px; }
+  @media (max-width: 992px) {
+    .bio_career {
+      text-align: center; }
+      .bio_career .text-right {
+        text-align: center; }
+      .bio_career ul {
+        list-style: none;
+        padding-left: 0; }
+      .bio_career .justify-content-start, .bio_career .justify-content-end {
+        justify-content: center !important; }
+      .bio_career .ps-4 {
+        border-left: none; } }
 
 .post_page {
   padding: 2rem 15px;

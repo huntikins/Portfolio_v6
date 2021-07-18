@@ -107,6 +107,7 @@
               background: rgba($color: $gray, $alpha: 1);
               border-radius: 5px;
               color: $teal;
+              border: solid $teal 2px;
           }
           input, input::placeholder, textarea, textarea::placeholder {
               height: 30px;
