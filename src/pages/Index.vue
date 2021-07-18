@@ -16,7 +16,7 @@
               <div class="page_home-portfolio--posts-cta text-right pt-4" style="text-align:right;">
                 <h3>Read What I've Written Lately</h3>
                 <p class="my-4">As a Full Stack Web Developer I am constantly reminded of the ever expansive room for improvement. There are always new technologies to learn, a javascript method to discover, or even development tools to take advantage of. I'd love to share my experience and assuming I get around to writing new content, here is where you can find all of my Web Development Tips, Tricks, and Tidbits.</p>
-                <g-link to="/blog/" class="btn">Blog</g-link>
+                <g-link to="/about-me/" class="btn">Blog</g-link>
               </div>
             </div>
           </div>
