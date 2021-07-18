@@ -30,6 +30,24 @@ module.exports = {
     },
     {
       use: '@gridsome/plugin-sitemap'
+    },
+    {
+      use: 'gridsome-plugin-netlify-redirects',
+      options: {
+        typeName: 'NetlifyRedirects',
+        redirects: [
+          {
+            from: '/blog/:slug',
+            to: 'https://blog.huntertrammell.dev/:slug',
+            status: 301
+          },
+          {
+            from: '/blog/',
+            to: 'https://blog.huntertrammell.dev/',
+            status: 301
+          }
+        ]
+      }
     }
   ],
   templates: {

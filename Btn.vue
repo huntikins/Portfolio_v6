@@ -19,7 +19,7 @@ export default {
             delete attrObj['text'];
             if(!attrObj['href'].includes('createfervor') && attrObj['href'].includes('http')){
                 attrObj['target'] = '_blank';
-                attrObj['rel'] = 'noopener';
+                attrObj['rel'] = 'noreferrer';
             }
             if(!attrObj['class'] && attrObj['color']) {
                 attrObj['class'] = `btn btn-${attrObj['color']}`;

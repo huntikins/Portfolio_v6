@@ -7,6 +7,7 @@ readmore: "About Me"
 tags: ['Bio', 'About Me', 'Developer Origin']
 author: 'Hunter Trammell'
 featured: true
+publication: 'https://blog.huntertrammell.dev/that-one-time-i-grew-up-and-became-a-web-developer'
 ---
 ![Hiker overlooking a mountain](https://strapifileserver.s3.us-east-2.amazonaws.com/kalen_emsley_mg_J_Skg_Io_JI_unsplash_06c8113c5c.jpg)
 

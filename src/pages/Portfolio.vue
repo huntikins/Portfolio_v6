@@ -5,7 +5,7 @@
         <h1>My Portfolio<br><span>Check Out What I've Built</span></h1>
         <div class="page_home-intro--body">
           <p class="page_home-intro--quote"><em>"All we have to decide is what to do with the time that is given us." - Gandalf</em></p>
-          <p class="page_home-intro--tagline">This is where I showcase my work, from projects I built learning to code to websites I created for work. I’ve gathered all my projects into a single repository. I am honored to work in a field where my work can persist past it’s creation. Whereas a chef’s creation may only live until the dining guest completes their meal, my work lives as long as the hosting is paid for (or longer if we’re talking <a href="https://archiveprogram.github.com/arctic-vault/" target="_blank" rel="noopener">GitHub Arctic Code Vault</a>). Each project includes the tech stack used, applicable links and a copy of the sites readme.</p>
+          <p class="page_home-intro--tagline">This is where I showcase my work, from projects I built learning to code to websites I created for work. I’ve gathered all my projects into a single repository. I am honored to work in a field where my work can persist past it’s creation. Whereas a chef’s creation may only live until the dining guest completes their meal, my work lives as long as the hosting is paid for (or longer if we’re talking <a href="https://archiveprogram.github.com/arctic-vault/" target="_blank" rel="noreferrer">GitHub Arctic Code Vault</a>). Each project includes the tech stack used, applicable links and a copy of the sites readme.</p>
           <a href="#projects" class="btn">Projects</a>
         </div>
       </section>
