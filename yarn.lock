@@ -3534,7 +3534,7 @@ entities@^1.1.1:
   resolved "https://registry.yarnpkg.com/entities/-/entities-1.1.2.tgz#bdfa735299664dfafd34529ed4f8522a275fea56"
   integrity sha512-f2LZMYl1Fzu7YSBKg+RoROelpOaNrcGmE9AZubeDfrCEia483oW4MI4VyFd5VNHIgQ/7qm1I0wUHK1eJnn2y2w==
 
-entities@^2.0.0:
+entities@^2.0.0, entities@^2.0.3:
   version "2.2.0"
   resolved "https://registry.yarnpkg.com/entities/-/entities-2.2.0.tgz#098dc90ebb83d8dffa089d55256b351d34c4da55"
   integrity sha512-p92if5Nz619I0w+akJrLZH0MX0Pb5DX39XOwQTtXSdQQOaYH03S1uIQp4mhOZtAXrxq4ViO67YTiLBo2638o9A==
@@ -4547,6 +4547,11 @@ gray-matter@^4.0.2:
     section-matter "^1.0.0"
     strip-bom-string "^1.0.0"
 
+gridsome-plugin-netlify-redirects@^1.0.0:
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/gridsome-plugin-netlify-redirects/-/gridsome-plugin-netlify-redirects-1.0.0.tgz#6c9aed0a1fef257601dfa4c8d4d901a821652e72"
+  integrity sha512-irt99BCgPsmGgQH6oAsOTAW7H8ZlgY1mfQBgsY9hQYb1XTl6f9bnqWg2yruvwRDR/LRig60a/gUS5ggHJDagDg==
+
 gridsome-plugin-seo@^1.0.1:
   version "1.0.1"
   resolved "https://registry.yarnpkg.com/gridsome-plugin-seo/-/gridsome-plugin-seo-1.0.1.tgz#26e5b681a038225a12c58a1e11b267d20d6580c8"
@@ -4554,6 +4559,14 @@ gridsome-plugin-seo@^1.0.1:
   dependencies:
     lodash "^4.17.20"
     nuxt-seo "^1.3.1"
+
+gridsome-source-rss@^1.0.0:
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/gridsome-source-rss/-/gridsome-source-rss-1.0.0.tgz#d22e41221e77c8c4688ffee30c586f9179a58d5e"
+  integrity sha512-t39YCoFunJVxsVcygMwrs8H2VtKYVgJGWevRbnuZ2Ekc58BkFlAkCjPhtS0VbJuFUphJ4eG0R2T2qcIwSM/DAg==
+  dependencies:
+    lodash.omit "^4.5.0"
+    rss-parser "^3.7.3"
 
 gridsome@^0.7.0:
   version "0.7.23"
@@ -5912,6 +5925,11 @@ lodash.memoize@^4.1.2:
   version "4.1.2"
   resolved "https://registry.yarnpkg.com/lodash.memoize/-/lodash.memoize-4.1.2.tgz#bcc6c49a42a2840ed997f323eada5ecd182e0bfe"
   integrity sha1-vMbEmkKihA7Zl/Mj6tpezRguC/4=
+
+lodash.omit@^4.5.0:
+  version "4.5.0"
+  resolved "https://registry.yarnpkg.com/lodash.omit/-/lodash.omit-4.5.0.tgz#6eb19ae5a1ee1dd9df0b969e66ce0b7fa30b5e60"
+  integrity sha1-brGa5aHuHdnfC5aeZs4Lf6MLXmA=
 
 lodash.template@^4.5.0:
   version "4.5.0"
@@ -8328,6 +8346,14 @@ ripemd160@^2.0.0, ripemd160@^2.0.1:
     hash-base "^3.0.0"
     inherits "^2.0.1"
 
+rss-parser@^3.7.3:
+  version "3.12.0"
+  resolved "https://registry.yarnpkg.com/rss-parser/-/rss-parser-3.12.0.tgz#b8888699ea46304a74363fbd8144671b2997984c"
+  integrity sha512-aqD3E8iavcCdkhVxNDIdg1nkBI17jgqF+9OqPS1orwNaOgySdpvq6B+DoONLhzjzwV8mWg37sb60e4bmLK117A==
+  dependencies:
+    entities "^2.0.3"
+    xml2js "^0.4.19"
+
 run-parallel@^1.1.9:
   version "1.2.0"
   resolved "https://registry.yarnpkg.com/run-parallel/-/run-parallel-1.2.0.tgz#66d1368da7bdf921eb9d95bd1a9229e7f21a43ee"
@@ -8395,7 +8421,7 @@ sass-loader@^8.0.0:
     schema-utils "^2.6.1"
     semver "^6.3.0"
 
-sax@~1.2.4:
+sax@>=0.6.0, sax@~1.2.4:
   version "1.2.4"
   resolved "https://registry.yarnpkg.com/sax/-/sax-1.2.4.tgz#2816234e2378bddc4e5354fab5caa895df7100d9"
   integrity sha512-NqVDv9TpANUjFm0N8uM5GxL36UgKi9/atZw+x7YFnQ8ckwFGKrl4xX4yWtrey3UJm5nP1kUbnYgLopqWNSRhWw==
@@ -10260,10 +10286,23 @@ xdg-basedir@^4.0.0:
   resolved "https://registry.yarnpkg.com/xdg-basedir/-/xdg-basedir-4.0.0.tgz#4bc8d9984403696225ef83a1573cbbcb4e79db13"
   integrity sha512-PSNhEJDejZYV7h50BohL09Er9VaIefr2LMAf3OEmpCkjOi34eYyQYAXUTjEQtZJTKcF0E2UKTh+osDLsgNim9Q==
 
+xml2js@^0.4.19:
+  version "0.4.23"
+  resolved "https://registry.yarnpkg.com/xml2js/-/xml2js-0.4.23.tgz#a0c69516752421eb2ac758ee4d4ccf58843eac66"
+  integrity sha512-ySPiMjM0+pLDftHgXY4By0uswI3SPKLDw/i3UXbnO8M/p28zqexCUoPmQFrYD+/1BzhGJSs2i1ERWKJAtiLrug==
+  dependencies:
+    sax ">=0.6.0"
+    xmlbuilder "~11.0.0"
+
 xmlbuilder@^10.0.0:
   version "10.1.1"
   resolved "https://registry.yarnpkg.com/xmlbuilder/-/xmlbuilder-10.1.1.tgz#8cae6688cc9b38d850b7c8d3c0a4161dcaf475b0"
   integrity sha512-OyzrcFLL/nb6fMGHbiRDuPup9ljBycsdCypwuyg5AAHvyWzGfChJpCXMG88AGTIMFhGZ9RccFN1e6lhg3hkwKg==
+
+xmlbuilder@~11.0.0:
+  version "11.0.1"
+  resolved "https://registry.yarnpkg.com/xmlbuilder/-/xmlbuilder-11.0.1.tgz#be9bae1c8a046e76b31127726347d0ad7002beb3"
+  integrity sha512-fDlsI/kFEx7gLvbecc0/ohLG50fugQp8ryHzMTuW9vSa1GJ0XYWKnhsUx7oie3G98+r56aTQIUB4kht42R3JvA==
 
 xss@^1.0.6:
   version "1.0.8"
